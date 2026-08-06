@@ -153,10 +153,17 @@
   .result.show { display: block; }
   .result h2 { margin-top: 0; }
   .result .big { font-size: 2.2rem; color: var(--accent2); font-weight: bold; }
-  #shareBtn {
-    background: var(--accent2);
+  #shareXBtn {
+    background: #000;
     color: white;
     margin-top: 12px;
+    width: 100%;
+  }
+  #shareBtn {
+    background: var(--used);
+    color: var(--fg);
+    width: 100%;
+    font-size: 0.85rem;
   }
   .answer {
     margin-top: 14px;
@@ -209,7 +216,8 @@
     <div>あなたの記録</div>
     <div class="big" id="finalScore">0語</div>
     <div id="compareLine"></div>
-    <button id="shareBtn">結果をコピーしてシェア</button>
+    <button id="shareXBtn">🕊️ Xでシェア</button>
+    <button id="shareBtn" style="margin-top:8px;">結果をコピー(他のSNS用)</button>
     <div class="answer" id="answerBox"></div>
   </div>
 
@@ -405,17 +413,27 @@ function buildResultBar(score, best) {
   return "🟧".repeat(filled) + "⬜".repeat(total - filled);
 }
 
-document.getElementById("shareBtn").onclick = () => {
+function buildShareText(){
   const bar = buildResultBar(dayBest, PUZZLE.best);
   const perfect = dayBest >= PUZZLE.best;
   const siteUrl = location.href.split("?")[0].split("#")[0];
-  const text =
-`🔤 日刊しりとり最長チャレンジ #${PUZZLE_NO}
+  return `🔤 日刊しりとり最長チャレンジ #${PUZZLE_NO}
 ${bar}
 ${dayBest}語 / 最長解${PUZZLE.best}語${perfect ? " 🎉完全一致" : ""}(${attemptsUsed}/${MAX_ATTEMPTS}回使用)
 
 ${siteUrl}
 #日刊しりとり`;
+}
+
+document.getElementById("shareXBtn").onclick = () => {
+  // X Web Intent: OAuth不要で投稿画面を開ける公式の仕組み。
+  const text = buildShareText();
+  const intentUrl = "https://x.com/intent/tweet?text=" + encodeURIComponent(text);
+  window.open(intentUrl, "_blank", "noopener,noreferrer,width=600,height=500");
+};
+
+document.getElementById("shareBtn").onclick = () => {
+  const text = buildShareText();
   navigator.clipboard?.writeText(text);
   alert("結果をコピーしました。SNSに貼り付けてシェアできます。\n\n" + text);
 };
