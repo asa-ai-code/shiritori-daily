@@ -448,13 +448,15 @@ function buildResultBar(score, best) {
 }
 
 function buildShareText(){
+  // 無名の新作なので、Wordleのように絵文字バーだけで通用しない。
+  // 初見の人でも「何のゲームか」が1行で分かるようにする。
   const bar = buildResultBar(dayBest, PUZZLE.best);
   const perfect = dayBest >= PUZZLE.best;
   const siteUrl = location.href.split("?")[0].split("#")[0];
-  return `🔤 日刊しりとり最長チャレンジ #${PUZZLE_NO}
-${bar}
-${dayBest}語 / 最長解${PUZZLE.best}語${perfect ? " 🎉完全一致" : ""}(${attemptsUsed}/${MAX_ATTEMPTS}回使用)
+  return `毎日16語からしりとりの最長チェーンを作るゲーム「日刊しりとり」#${PUZZLE_NO}
+${bar} ${dayBest}/${PUZZLE.best}語${perfect ? " 🎉" : ""}
 
+自分もやってみる↓
 ${siteUrl}
 #日刊しりとり`;
 }
