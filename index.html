@@ -151,6 +151,15 @@
     cursor: not-allowed;
   }
   .tile.disabled:hover { border-color: var(--border); }
+  .tile.shake {
+    animation: shake 0.3s ease;
+    border-color: #dc2626;
+  }
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-4px); }
+    75% { transform: translateX(4px); }
+  }
   .controls {
     display: flex;
     gap: 8px;
@@ -355,14 +364,26 @@ function render(){
     const div = document.createElement("div");
     const usedIdx = chain.indexOf(idx);
     const isUsed = usedIdx !== -1;
-    let canPick = !isUsed && !finished && !locked;
-    if (canPick && chain.length > 0) {
-      const lastTail = tailKana(PUZZLE.words[chain[chain.length-1]].reading);
-      canPick = headKana(w.reading) === lastTail;
-    }
-    div.className = "tile" + (isUsed ? " used" : "") + (!canPick && !isUsed ? " disabled" : "");
+    const gameActive = !isUsed && !finished && !locked;
+    // どれが繋がるかを事前にグレーアウトで教えてしまうと答えのヒントになるので、
+    // 見た目上は「未使用の単語」を全部同じ扱いにする。繋がるかどうかはクリック後に判定する。
+    div.className = "tile" + (isUsed ? " used" : "") + (!gameActive ? " disabled" : "");
     div.textContent = w.surface;
-    div.onclick = () => { if (canPick) { chain.push(idx); render(); } };
+    div.onclick = () => {
+      if (!gameActive) return;
+      let connects = true;
+      if (chain.length > 0) {
+        const lastTail = tailKana(PUZZLE.words[chain[chain.length-1]].reading);
+        connects = headKana(w.reading) === lastTail;
+      }
+      if (connects) {
+        chain.push(idx);
+        render();
+      } else {
+        div.classList.add("shake");
+        setTimeout(() => div.classList.remove("shake"), 300);
+      }
+    };
     grid.appendChild(div);
   });
 
