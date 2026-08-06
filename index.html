@@ -264,15 +264,16 @@ let PUZZLE = null;
 let PUZZLE_NO = 0;   // Wordleの「#645」のような通し番号(在庫が尽きても増え続ける)
 
 function pickPuzzleKeyForToday(keys) {
-  // 日付(UTC基準の通し日数)を問題数で割った余りで、毎日決まった1問を選ぶ。
+  // 日付(日本時間の通し日数)を問題数で割った余りで、毎日決まった1問を選ぶ。
   // day-N という命名を前提に、Nの若い順にソートして周期的に割り当てる。
   const sorted = keys.slice().sort((a, b) => {
     const na = parseInt(a.split("-")[1], 10);
     const nb = parseInt(b.split("-")[1], 10);
     return na - nb;
   });
-  const epoch = Date.UTC(2026, 0, 1); // 固定の起点日
-  const daysSince = Math.floor((Date.now() - epoch) / 86400000);
+  const JST_OFFSET_MS = 9 * 60 * 60 * 1000;
+  const epoch = Date.UTC(2026, 0, 1); // 固定の起点日(UTC基準の目印。JST補正は現在時刻側にかける)
+  const daysSince = Math.floor((Date.now() + JST_OFFSET_MS - epoch) / 86400000);
   PUZZLE_NO = daysSince + 1;
   const idx = ((daysSince % sorted.length) + sorted.length) % sorted.length;
   return sorted[idx];
