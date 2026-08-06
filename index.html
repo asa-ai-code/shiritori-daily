@@ -20,62 +20,78 @@
 <meta name="twitter:title" content="日刊しりとり最長チャレンジ">
 <meta name="twitter:description" content="毎日16語が配られる、みんな共通の日刊しりとりパズル。">
 <meta name="twitter:image" content="https://asa-ai-code.github.io/shiritori-daily/ogp_image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
 <style>
   :root {
     color-scheme: light dark;
-    --bg: #faf7f2;
-    --fg: #2a2420;
+    --bg: #ffffff;
+    --fg: #18181b;
+    --muted: #71717a;
     --card: #ffffff;
-    --accent: #d97b3f;
-    --accent2: #4f7d6c;
-    --used: #e5e0d8;
-    --border: #dcd3c6;
+    --accent: #f9622c;
+    --accent-ink: #ffffff;
+    --accent2: #059669;
+    --used: #f4f4f5;
+    --border: #e7e5e4;
+    --shadow: 0 1px 2px rgba(24,24,27,.04), 0 8px 24px rgba(24,24,27,.06);
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #1b1815;
-      --fg: #eee7de;
-      --card: #262220;
-      --accent: #e39a5f;
-      --accent2: #7fb39d;
-      --used: #3a342f;
-      --border: #3a342f;
+      --bg: #0c0c0d;
+      --fg: #f4f4f5;
+      --muted: #a1a1aa;
+      --card: #18181b;
+      --accent: #fb7a3f;
+      --accent-ink: #18181b;
+      --accent2: #34d399;
+      --used: #26262a;
+      --border: #2a2a2e;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
     }
   }
   * { box-sizing: border-box; }
   body {
     margin: 0;
-    font-family: "Hiragino Sans", "Yu Gothic", system-ui, sans-serif;
+    font-family: "Zen Kaku Gothic New", "Hiragino Sans", "Yu Gothic", system-ui, sans-serif;
     background: var(--bg);
     color: var(--fg);
     display: flex;
     justify-content: center;
-    padding: 24px 12px 60px;
+    padding: 32px 16px 60px;
+    -webkit-font-smoothing: antialiased;
   }
-  .wrap { width: 100%; max-width: 480px; }
+  .wrap { width: 100%; max-width: 460px; }
   h1 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    font-weight: 900;
+    letter-spacing: -0.01em;
     text-align: center;
-    margin: 0 0 4px;
+    margin: 0 0 6px;
   }
   .sub {
     text-align: center;
-    font-size: 0.85rem;
-    opacity: 0.7;
-    margin-bottom: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--muted);
+    margin-bottom: 22px;
   }
   .chain-area {
     background: var(--card);
     border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 16px;
-    margin-bottom: 16px;
+    box-shadow: var(--shadow);
+    border-radius: 16px;
+    padding: 18px;
+    margin-bottom: 18px;
     min-height: 64px;
   }
   .chain-label {
-    font-size: 0.75rem;
-    opacity: 0.6;
-    margin-bottom: 8px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: var(--muted);
+    margin-bottom: 10px;
   }
   .chain-words {
     display: flex;
@@ -85,102 +101,120 @@
   }
   .chain-words .word {
     background: var(--accent);
-    color: white;
-    padding: 6px 10px;
+    color: var(--accent-ink);
+    padding: 6px 12px;
     border-radius: 8px;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+    font-weight: 700;
   }
-  .arrow { opacity: 0.5; }
+  .arrow { color: var(--muted); }
   .score-row {
     display: flex;
     justify-content: space-between;
-    font-size: 0.9rem;
-    margin-top: 10px;
-    padding-top: 10px;
-    border-top: 1px dashed var(--border);
+    font-size: 0.85rem;
+    color: var(--muted);
+    font-weight: 500;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
   }
-  .score-row b { color: var(--accent); font-size: 1.1rem; }
+  .score-row b { color: var(--fg); font-size: 1.05rem; font-weight: 900; }
   .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 8px;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
   }
   .tile {
     background: var(--card);
     border: 1px solid var(--border);
     border-radius: 10px;
-    padding: 10px 4px;
+    padding: 12px 4px;
     text-align: center;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+    font-weight: 700;
     cursor: pointer;
     user-select: none;
-    transition: transform 0.1s;
+    transition: transform 0.08s ease, border-color 0.15s ease;
   }
-  .tile:active { transform: scale(0.95); }
+  .tile:hover { border-color: var(--accent); }
+  .tile:active { transform: scale(0.94); }
   .tile.used {
     background: var(--used);
-    color: #999;
+    border-color: var(--used);
+    color: var(--muted);
     cursor: not-allowed;
   }
+  .tile.used:hover { border-color: var(--used); }
   .tile.disabled {
-    opacity: 0.35;
+    opacity: 0.4;
     cursor: not-allowed;
   }
+  .tile.disabled:hover { border-color: var(--border); }
   .controls {
     display: flex;
     gap: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
   }
   button {
     flex: 1;
-    padding: 12px;
+    padding: 13px;
     border-radius: 10px;
     border: none;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    font-family: inherit;
     cursor: pointer;
+    transition: opacity 0.15s ease, transform 0.08s ease;
   }
+  button:active { transform: scale(0.98); }
+  button:disabled { cursor: not-allowed; opacity: 0.5; }
   #undoBtn { background: var(--used); color: var(--fg); }
-  #giveupBtn { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+  #giveupBtn { background: var(--accent); color: var(--accent-ink); }
   .result {
     background: var(--card);
     border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 20px;
+    box-shadow: var(--shadow);
+    border-radius: 16px;
+    padding: 24px 20px;
     text-align: center;
     display: none;
   }
   .result.show { display: block; }
-  .result h2 { margin-top: 0; }
-  .result .big { font-size: 2.2rem; color: var(--accent2); font-weight: bold; }
+  .result h2 { margin: 0 0 4px; font-size: 1.05rem; font-weight: 900; }
+  .result .big { font-size: 2.4rem; color: var(--accent2); font-weight: 900; letter-spacing: -0.02em; }
   #shareXBtn {
     background: #000;
-    color: white;
-    margin-top: 12px;
+    color: #fff;
+    margin-top: 14px;
     width: 100%;
   }
   #shareBtn {
-    background: var(--used);
-    color: var(--fg);
+    background: transparent;
+    color: var(--muted);
+    border: 1px solid var(--border);
     width: 100%;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
+    margin-top: 8px;
   }
   .answer {
-    margin-top: 14px;
-    font-size: 0.85rem;
-    opacity: 0.75;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    font-size: 0.82rem;
+    color: var(--muted);
     text-align: left;
-    line-height: 1.6;
+    line-height: 1.7;
   }
   .rule {
-    font-size: 0.8rem;
-    opacity: 0.65;
+    font-size: 0.78rem;
+    color: var(--muted);
     text-align: center;
-    margin: 4px 0 20px;
+    margin: 4px 0 22px;
   }
   .credit {
     font-size: 0.7rem;
-    opacity: 0.5;
+    color: var(--muted);
     text-align: center;
     margin-top: 30px;
   }
