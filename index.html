@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>日刊しりとり最長チャレンジ</title>
+<meta name="description" content="毎日16語が配られる、みんな共通の日刊しりとりパズル。一番長くつなげられるか挑戦しよう。無料・登録不要。">
+
+<!-- OGP: 公開URLが決まったら og:url と og:image の絶対URLを置き換えること -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="日刊しりとり最長チャレンジ">
+<meta property="og:description" content="毎日16語が配られる、みんな共通の日刊しりとりパズル。一番長くつなげられるか挑戦しよう。">
+<meta property="og:url" content="https://asa-ai-code.github.io/shiritori-daily/">
+<meta property="og:image" content="https://asa-ai-code.github.io/shiritori-daily/ogp_image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="日刊しりとり最長チャレンジ">
+<meta name="twitter:description" content="毎日16語が配られる、みんな共通の日刊しりとりパズル。">
+<meta name="twitter:image" content="https://asa-ai-code.github.io/shiritori-daily/ogp_image.png">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #faf7f2;
+    --fg: #2a2420;
+    --card: #ffffff;
+    --accent: #d97b3f;
+    --accent2: #4f7d6c;
+    --used: #e5e0d8;
+    --border: #dcd3c6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1b1815;
+      --fg: #eee7de;
+      --card: #262220;
+      --accent: #e39a5f;
+      --accent2: #7fb39d;
+      --used: #3a342f;
+      --border: #3a342f;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Hiragino Sans", "Yu Gothic", system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    display: flex;
+    justify-content: center;
+    padding: 24px 12px 60px;
+  }
+  .wrap { width: 100%; max-width: 480px; }
+  h1 {
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 0 0 4px;
+  }
+  .sub {
+    text-align: center;
+    font-size: 0.85rem;
+    opacity: 0.7;
+    margin-bottom: 20px;
+  }
+  .chain-area {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+    margin-bottom: 16px;
+    min-height: 64px;
+  }
+  .chain-label {
+    font-size: 0.75rem;
+    opacity: 0.6;
+    margin-bottom: 8px;
+  }
+  .chain-words {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+  }
+  .chain-words .word {
+    background: var(--accent);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+  }
+  .arrow { opacity: 0.5; }
+  .score-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px dashed var(--border);
+  }
+  .score-row b { color: var(--accent); font-size: 1.1rem; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  .tile {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 10px 4px;
+    text-align: center;
+    font-size: 0.95rem;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.1s;
+  }
+  .tile:active { transform: scale(0.95); }
+  .tile.used {
+    background: var(--used);
+    color: #999;
+    cursor: not-allowed;
+  }
+  .tile.disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+  }
+  .controls {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  button {
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    font-size: 0.95rem;
+    cursor: pointer;
+  }
+  #undoBtn { background: var(--used); color: var(--fg); }
+  #giveupBtn { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+  .result {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px;
+    text-align: center;
+    display: none;
+  }
+  .result.show { display: block; }
+  .result h2 { margin-top: 0; }
+  .result .big { font-size: 2.2rem; color: var(--accent2); font-weight: bold; }
+  #shareBtn {
+    background: var(--accent2);
+    color: white;
+    margin-top: 12px;
+  }
+  .answer {
+    margin-top: 14px;
+    font-size: 0.85rem;
+    opacity: 0.75;
+    text-align: left;
+    line-height: 1.6;
+  }
+  .rule {
+    font-size: 0.8rem;
+    opacity: 0.65;
+    text-align: center;
+    margin: 4px 0 20px;
+  }
+  .credit {
+    font-size: 0.7rem;
+    opacity: 0.5;
+    text-align: center;
+    margin-top: 30px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🔤 日刊しりとり最長チャレンジ</h1>
+  <div class="sub" id="dateLabel">-</div>
+  <div class="rule">16語の中から、しりとりで一番長くつなげよう</div>
+
+  <div class="chain-area">
+    <div class="chain-label">今のチェーン</div>
+    <div class="chain-words" id="chainWords"><span style="opacity:.4">単語をタップして開始</span></div>
+    <div class="score-row">
+      <span>現在 <b id="curLen">0</b>語</span>
+      <span>自己ベスト <b id="bestSoFar">0</b>語</span>
+    </div>
+  </div>
+
+  <div class="grid" id="tileGrid"></div>
+
+  <div class="controls">
+    <button id="undoBtn">1つ戻す</button>
+    <button id="giveupBtn">ここで終了して結果を見る</button>
+  </div>
+
+  <div class="result" id="resultBox">
+    <h2>結果</h2>
+    <div>あなたの記録</div>
+    <div class="big" id="finalScore">0語</div>
+    <div id="compareLine"></div>
+    <button id="shareBtn">結果をコピーしてシェア</button>
+    <div class="answer" id="answerBox"></div>
+  </div>
+
+  <div class="credit">単語データ: Mozc dictionary (IPAdic準拠) を使用</div>
+</div>
+
+<script>
+// ==== その日の問題を puzzles.json から日付ベースで選ぶ ====
+let PUZZLE = null;
+let PUZZLE_NO = 0;   // Wordleの「#645」のような通し番号(在庫が尽きても増え続ける)
+
+function pickPuzzleKeyForToday(keys) {
+  // 日付(UTC基準の通し日数)を問題数で割った余りで、毎日決まった1問を選ぶ。
+  // day-N という命名を前提に、Nの若い順にソートして周期的に割り当てる。
+  const sorted = keys.slice().sort((a, b) => {
+    const na = parseInt(a.split("-")[1], 10);
+    const nb = parseInt(b.split("-")[1], 10);
+    return na - nb;
+  });
+  const epoch = Date.UTC(2026, 0, 1); // 固定の起点日
+  const daysSince = Math.floor((Date.now() - epoch) / 86400000);
+  PUZZLE_NO = daysSince + 1;
+  const idx = ((daysSince % sorted.length) + sorted.length) % sorted.length;
+  return sorted[idx];
+}
+
+async function loadPuzzle() {
+  const res = await fetch("puzzles.json");
+  const all = await res.json();
+  const key = pickPuzzleKeyForToday(Object.keys(all));
+  PUZZLE = all[key];
+}
+
+const kanaSmallMap = {"ぁ":"あ","ぃ":"い","ぅ":"う","ぇ":"え","ぉ":"お","っ":"つ","ゃ":"や","ゅ":"ゆ","ょ":"よ","ゎ":"わ"};
+const vowelGroups = {
+  "あかさたなはまやらわがざだばぱ":"あ",
+  "いきしちにひみりぎじぢびぴ":"い",
+  "うくすつぬふむゆるぐずづぶぷ":"う",
+  "えけせてねへめれげぜでべぺ":"え",
+  "おこそとのほもよろごぞどぼぽ":"お",
+};
+function vowelOf(ch){
+  for (const g in vowelGroups) if (g.includes(ch)) return vowelGroups[g];
+  return null;
+}
+function normalizeSmall(s){
+  return s.split("").map(c => kanaSmallMap[c] || c).join("");
+}
+function headKana(reading){
+  return normalizeSmall(reading)[0];
+}
+function tailKana(reading){
+  let s = normalizeSmall(reading);
+  let i = s.length - 1;
+  while (i >= 0 && s[i] === "ー") i--;
+  if (i < 0) return null;
+  const ch = s[i];
+  if (s.length - 1 > i) return vowelOf(ch) || ch;
+  return ch;
+}
+
+let chain = [];      // インデックスの配列
+let bestSoFar = 0;
+let finished = false;
+
+function render(){
+  const grid = document.getElementById("tileGrid");
+  grid.innerHTML = "";
+  PUZZLE.words.forEach((w, idx) => {
+    const div = document.createElement("div");
+    const usedIdx = chain.indexOf(idx);
+    const isUsed = usedIdx !== -1;
+    let canPick = !isUsed && !finished;
+    if (canPick && chain.length > 0) {
+      const lastTail = tailKana(PUZZLE.words[chain[chain.length-1]].reading);
+      canPick = headKana(w.reading) === lastTail;
+    }
+    div.className = "tile" + (isUsed ? " used" : "") + (!canPick && !isUsed ? " disabled" : "");
+    div.textContent = w.surface;
+    div.onclick = () => { if (canPick) { chain.push(idx); render(); } };
+    grid.appendChild(div);
+  });
+
+  const chainWordsEl = document.getElementById("chainWords");
+  if (chain.length === 0) {
+    chainWordsEl.innerHTML = '<span style="opacity:.4">単語をタップして開始</span>';
+  } else {
+    chainWordsEl.innerHTML = chain.map((idx,i) => {
+      const w = PUZZLE.words[idx];
+      return (i>0 ? '<span class="arrow">→</span>' : '') + `<span class="word">${w.surface}</span>`;
+    }).join("");
+  }
+  document.getElementById("curLen").textContent = chain.length;
+  if (chain.length > bestSoFar) {
+    bestSoFar = chain.length;
+    document.getElementById("bestSoFar").textContent = bestSoFar;
+  }
+}
+
+document.getElementById("undoBtn").onclick = () => {
+  if (finished) return;
+  chain.pop();
+  render();
+};
+
+document.getElementById("giveupBtn").onclick = () => {
+  finished = true;
+  showResult();
+};
+
+function showResult(){
+  const box = document.getElementById("resultBox");
+  box.classList.add("show");
+  document.getElementById("finalScore").textContent = bestSoFar + "語";
+
+  const best = PUZZLE.best;
+  let cmp;
+  if (bestSoFar >= best) cmp = `最長解(${best}語)に到達しました🎉`;
+  else cmp = `最長解は ${best}語 でした`;
+  document.getElementById("compareLine").textContent = cmp;
+
+  const answerChain = PUZZLE.best_path.map(i => PUZZLE.words[i].surface).join(" → ");
+  document.getElementById("answerBox").innerHTML = "最長解の一例: " + answerChain;
+
+  render();
+}
+
+function buildResultBar(score, best) {
+  // Wordleの緑四角のノリで、自己ベストを埋めた分だけ色を付ける。
+  // best より score が多く伸びる(=満点超え)ことはないが、念のためクランプする。
+  const total = Math.max(best, score, 1);
+  const filled = Math.min(score, total);
+  return "🟧".repeat(filled) + "⬜".repeat(total - filled);
+}
+
+document.getElementById("shareBtn").onclick = () => {
+  const bar = buildResultBar(bestSoFar, PUZZLE.best);
+  const perfect = bestSoFar >= PUZZLE.best;
+  const siteUrl = location.href.split("?")[0].split("#")[0];
+  const text =
+`🔤 日刊しりとり最長チャレンジ #${PUZZLE_NO}
+${bar}
+${bestSoFar}語 / 最長解${PUZZLE.best}語${perfect ? " 🎉完全一致" : ""}
+
+${siteUrl}
+#日刊しりとり`;
+  navigator.clipboard?.writeText(text);
+  alert("結果をコピーしました。SNSに貼り付けてシェアできます。\n\n" + text);
+};
+
+const todayLabel = new Date().toLocaleDateString("ja-JP", { year:"numeric", month:"long", day:"numeric" });
+
+loadPuzzle().then(() => {
+  document.getElementById("dateLabel").textContent = `#${PUZZLE_NO} ・ ${todayLabel}`;
+  render();
+}).catch(err => {
+  document.getElementById("tileGrid").innerHTML =
+    '<div style="grid-column:1/-1;color:#c0392b;font-size:.85rem;">'
+    + '問題データ(puzzles.json)の読み込みに失敗しました。'
+    + 'file:// を直接開いた場合はブラウザがfetchをブロックすることがあるので、'
+    + 'ローカルサーバー(例: python -m http.server)経由で開いてください。<br>詳細: '
+    + err + '</div>';
+  console.error(err);
+});
+</script>
+</body>
+</html>
