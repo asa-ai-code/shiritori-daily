@@ -192,6 +192,9 @@
       <span>現在 <b id="curLen">0</b>語</span>
       <span>自己ベスト <b id="bestSoFar">0</b>語</span>
     </div>
+    <div class="score-row" style="margin-top:4px;padding-top:0;border-top:none;">
+      <span>本日の残り挑戦 <b id="attemptsLeft">3</b>回</span>
+    </div>
   </div>
 
   <div class="grid" id="tileGrid"></div>
@@ -268,9 +271,34 @@ function tailKana(reading){
   return ch;
 }
 
-let chain = [];      // インデックスの配列
-let bestSoFar = 0;
-let finished = false;
+const MAX_ATTEMPTS = 3;
+
+let chain = [];      // インデックスの配列(今の挑戦分)
+let bestSoFar = 0;   // 今の挑戦での最高到達
+let finished = false;      // 今の挑戦を終えたか
+let locked = false;        // 3回使い切って、これ以上操作させない状態
+let attemptsUsed = 0;      // 今日すでに使った挑戦回数
+let dayBest = 0;           // 今日の全挑戦を通じての最高記録
+let dayBestChain = [];     // その最高記録の内訳
+
+function storageKey() {
+  return `shiritori_progress_${PUZZLE_NO}`;
+}
+function saveProgress() {
+  try {
+    localStorage.setItem(storageKey(), JSON.stringify({
+      attempts: attemptsUsed, best: dayBest, bestChain: dayBestChain,
+    }));
+  } catch (e) { /* localStorageが使えない環境は無視して継続プレイ扱いにする */ }
+}
+function loadProgress() {
+  try {
+    const raw = localStorage.getItem(storageKey());
+    return raw ? JSON.parse(raw) : null;
+  } catch (e) {
+    return null;
+  }
+}
 
 function render(){
   const grid = document.getElementById("tileGrid");
@@ -279,7 +307,7 @@ function render(){
     const div = document.createElement("div");
     const usedIdx = chain.indexOf(idx);
     const isUsed = usedIdx !== -1;
-    let canPick = !isUsed && !finished;
+    let canPick = !isUsed && !finished && !locked;
     if (canPick && chain.length > 0) {
       const lastTail = tailKana(PUZZLE.words[chain[chain.length-1]].reading);
       canPick = headKana(w.reading) === lastTail;
@@ -304,32 +332,67 @@ function render(){
     bestSoFar = chain.length;
     document.getElementById("bestSoFar").textContent = bestSoFar;
   }
+  document.getElementById("attemptsLeft").textContent = Math.max(0, MAX_ATTEMPTS - attemptsUsed);
 }
 
 document.getElementById("undoBtn").onclick = () => {
-  if (finished) return;
+  if (finished || locked) return;
   chain.pop();
   render();
 };
 
-document.getElementById("giveupBtn").onclick = () => {
-  finished = true;
+function finishAttempt(){
+  attemptsUsed += 1;
+  if (bestSoFar > dayBest) {
+    dayBest = bestSoFar;
+    dayBestChain = chain.slice();
+  }
+  saveProgress();
+  if (attemptsUsed >= MAX_ATTEMPTS) locked = true;
   showResult();
+}
+
+document.getElementById("giveupBtn").onclick = () => {
+  if (locked) return;
+  if (finished) {
+    // 「もう一度挑戦する」ボタンとして機能してる状態。次の挑戦を始める。
+    chain = [];
+    bestSoFar = 0;
+    finished = false;
+    document.getElementById("resultBox").classList.remove("show");
+    document.getElementById("giveupBtn").textContent = "ここで終了して結果を見る";
+    render();
+    return;
+  }
+  finished = true;
+  finishAttempt();
 };
 
 function showResult(){
   const box = document.getElementById("resultBox");
   box.classList.add("show");
-  document.getElementById("finalScore").textContent = bestSoFar + "語";
+  document.getElementById("finalScore").textContent = dayBest + "語";
 
   const best = PUZZLE.best;
+  const attemptsLeft = MAX_ATTEMPTS - attemptsUsed;
   let cmp;
-  if (bestSoFar >= best) cmp = `最長解(${best}語)に到達しました🎉`;
+  if (dayBest >= best) cmp = `最長解(${best}語)に到達しました🎉`;
+  else if (attemptsLeft > 0) cmp = `最長解は ${best}語 でした(残り${attemptsLeft}回挑戦できます)`;
   else cmp = `最長解は ${best}語 でした`;
   document.getElementById("compareLine").textContent = cmp;
 
   const answerChain = PUZZLE.best_path.map(i => PUZZLE.words[i].surface).join(" → ");
   document.getElementById("answerBox").innerHTML = "最長解の一例: " + answerChain;
+
+  const giveupBtn = document.getElementById("giveupBtn");
+  if (locked) {
+    giveupBtn.textContent = "本日の挑戦は終了しました(3回とも使用済み)";
+    giveupBtn.disabled = true;
+    document.getElementById("undoBtn").disabled = true;
+  } else if (finished) {
+    giveupBtn.textContent = `もう一度挑戦する(残り${attemptsLeft}回)`;
+    giveupBtn.disabled = false;
+  }
 
   render();
 }
@@ -343,13 +406,13 @@ function buildResultBar(score, best) {
 }
 
 document.getElementById("shareBtn").onclick = () => {
-  const bar = buildResultBar(bestSoFar, PUZZLE.best);
-  const perfect = bestSoFar >= PUZZLE.best;
+  const bar = buildResultBar(dayBest, PUZZLE.best);
+  const perfect = dayBest >= PUZZLE.best;
   const siteUrl = location.href.split("?")[0].split("#")[0];
   const text =
 `🔤 日刊しりとり最長チャレンジ #${PUZZLE_NO}
 ${bar}
-${bestSoFar}語 / 最長解${PUZZLE.best}語${perfect ? " 🎉完全一致" : ""}
+${dayBest}語 / 最長解${PUZZLE.best}語${perfect ? " 🎉完全一致" : ""}(${attemptsUsed}/${MAX_ATTEMPTS}回使用)
 
 ${siteUrl}
 #日刊しりとり`;
@@ -361,7 +424,24 @@ const todayLabel = new Date().toLocaleDateString("ja-JP", { year:"numeric", mont
 
 loadPuzzle().then(() => {
   document.getElementById("dateLabel").textContent = `#${PUZZLE_NO} ・ ${todayLabel}`;
-  render();
+
+  const progress = loadProgress();
+  if (progress) {
+    attemptsUsed = progress.attempts || 0;
+    dayBest = progress.best || 0;
+    dayBestChain = progress.bestChain || [];
+  }
+
+  if (attemptsUsed >= MAX_ATTEMPTS) {
+    // 3回使い切っている。リロードでの無限リトライを防ぐため、直近の最高記録を出して終了。
+    chain = dayBestChain.slice();
+    bestSoFar = dayBest;
+    finished = true;
+    locked = true;
+    showResult();
+  } else {
+    render();
+  }
 }).catch(err => {
   document.getElementById("tileGrid").innerHTML =
     '<div style="grid-column:1/-1;color:#c0392b;font-size:.85rem;">'
