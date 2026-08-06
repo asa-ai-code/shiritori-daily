@@ -2,800 +2,4771 @@
   "day-0": {
     "words": [
       {
-        "reading": "やくみ",
-        "surface": "薬味"
+        "reading": "こんだて",
+        "surface": "献立"
       },
       {
-        "reading": "うたがい",
-        "surface": "疑い"
+        "reading": "ふくつう",
+        "surface": "腹痛"
       },
       {
-        "reading": "ちゅうこ",
-        "surface": "中古"
+        "reading": "のぼり",
+        "surface": "登り"
       },
       {
-        "reading": "あつめ",
-        "surface": "厚め"
+        "reading": "すいてき",
+        "surface": "水滴"
       },
       {
-        "reading": "こたち",
-        "surface": "子たち"
+        "reading": "こうう",
+        "surface": "降雨"
       },
       {
-        "reading": "さいぶ",
-        "surface": "細部"
+        "reading": "おつぎ",
+        "surface": "お次"
       },
       {
-        "reading": "ぐうすう",
-        "surface": "偶数"
+        "reading": "らいむぎ",
+        "surface": "ライ麦"
       },
       {
-        "reading": "つかいみち",
-        "surface": "使い道"
+        "reading": "えんけい",
+        "surface": "円形"
       },
       {
-        "reading": "ちょうりきぐ",
-        "surface": "調理器具"
+        "reading": "なんしょ",
+        "surface": "難所"
       },
       {
-        "reading": "ぶじゅつ",
-        "surface": "武術"
+        "reading": "ぎまい",
+        "surface": "義妹"
       },
       {
-        "reading": "ゆうしゃ",
-        "surface": "勇者"
+        "reading": "ようえき",
+        "surface": "溶液"
       },
       {
-        "reading": "つけね",
-        "surface": "付け根"
+        "reading": "りけい",
+        "surface": "理系"
       },
       {
-        "reading": "ねんげつ",
-        "surface": "年月"
+        "reading": "まちなみ",
+        "surface": "町並み"
       },
       {
-        "reading": "げんりょう",
-        "surface": "原料"
+        "reading": "きんさ",
+        "surface": "僅差"
       },
       {
-        "reading": "のぞみ",
-        "surface": "望み"
+        "reading": "さきもの",
+        "surface": "先物"
       },
       {
-        "reading": "うんせい",
-        "surface": "運勢"
+        "reading": "いえがら",
+        "surface": "家柄"
       }
     ],
-    "best": 10,
+    "best": 9,
     "best_path": [
-      5,
-      9,
-      11,
-      12,
-      7,
-      2,
-      4,
       8,
+      10,
+      13,
+      14,
+      2,
+      11,
+      15,
       6,
-      1
+      9
     ]
   },
   "day-1": {
     "words": [
       {
-        "reading": "こはく",
-        "surface": "琥珀"
+        "reading": "でんげき",
+        "surface": "電撃"
       },
       {
-        "reading": "きんたい",
-        "surface": "勤怠"
+        "reading": "くうしつ",
+        "surface": "空室"
       },
       {
-        "reading": "おへや",
-        "surface": "お部屋"
+        "reading": "せっく",
+        "surface": "節句"
       },
       {
-        "reading": "びょうしょう",
-        "surface": "病床"
+        "reading": "つよさ",
+        "surface": "強さ"
       },
       {
-        "reading": "ぎゃく",
-        "surface": "逆"
+        "reading": "いにしえ",
+        "surface": "古"
       },
       {
-        "reading": "しょきち",
-        "surface": "初期値"
+        "reading": "くやしさ",
+        "surface": "悔しさ"
       },
       {
-        "reading": "いんさつぶつ",
-        "surface": "印刷物"
+        "reading": "ちじょう",
+        "surface": "地上"
       },
       {
-        "reading": "ぎだい",
-        "surface": "議題"
+        "reading": "くうぼ",
+        "surface": "空母"
       },
       {
-        "reading": "ぐんじ",
-        "surface": "軍事"
+        "reading": "じごく",
+        "surface": "地獄"
       },
       {
-        "reading": "くされ",
-        "surface": "腐れ"
+        "reading": "さいかい",
+        "surface": "最下位"
       },
       {
-        "reading": "きゅう",
-        "surface": "きゅう"
+        "reading": "ばんぱく",
+        "surface": "万博"
       },
       {
-        "reading": "れんめい",
-        "surface": "連盟"
+        "reading": "きょたく",
+        "surface": "居宅"
       },
       {
-        "reading": "いちどう",
-        "surface": "一同"
+        "reading": "しんだい",
+        "surface": "寝台"
       },
       {
-        "reading": "うなぎ",
-        "surface": "うなぎ"
+        "reading": "おおむぎ",
+        "surface": "大麦"
       },
       {
-        "reading": "たきぎ",
-        "surface": "薪"
+        "reading": "いりょく",
+        "surface": "威力"
       },
       {
-        "reading": "はかせ",
-        "surface": "博士"
+        "reading": "えのき",
+        "surface": "えのき"
       }
     ],
-    "best": 8,
+    "best": 9,
     "best_path": [
-      14,
-      4,
-      9,
-      11,
       12,
-      13,
-      7,
-      6
+      4,
+      15,
+      11,
+      1,
+      3,
+      9,
+      14,
+      5
     ]
   },
   "day-2": {
     "words": [
       {
-        "reading": "しょっき",
-        "surface": "食器"
+        "reading": "あがり",
+        "surface": "上がり"
       },
       {
-        "reading": "みがき",
-        "surface": "磨き"
+        "reading": "さくき",
+        "surface": "昨季"
       },
       {
-        "reading": "てんしゅ",
-        "surface": "店主"
+        "reading": "みなも",
+        "surface": "水面"
       },
       {
-        "reading": "うるし",
-        "surface": "漆"
+        "reading": "おんぷ",
+        "surface": "音符"
       },
       {
-        "reading": "きょうき",
-        "surface": "狂気"
+        "reading": "くちもと",
+        "surface": "口元"
       },
       {
-        "reading": "とない",
-        "surface": "都内"
+        "reading": "ごうぞく",
+        "surface": "豪族"
       },
       {
-        "reading": "いばしょ",
-        "surface": "居場所"
+        "reading": "とうない",
+        "surface": "島内"
       },
       {
-        "reading": "きわみ",
-        "surface": "極み"
+        "reading": "きんまく",
+        "surface": "筋膜"
       },
       {
-        "reading": "れんめい",
-        "surface": "連盟"
+        "reading": "いせい",
+        "surface": "異性"
       },
       {
-        "reading": "ひたいしょう",
-        "surface": "非対称"
+        "reading": "いぶき",
+        "surface": "息吹"
       },
       {
-        "reading": "きあい",
-        "surface": "気合"
+        "reading": "みもと",
+        "surface": "身元"
       },
       {
-        "reading": "おどろき",
-        "surface": "驚き"
-      },
-      {
-        "reading": "じゅうとく",
-        "surface": "重篤"
-      },
-      {
-        "reading": "かたがみ",
-        "surface": "型紙"
-      },
-      {
-        "reading": "きどう",
-        "surface": "軌道"
-      },
-      {
-        "reading": "みんせい",
-        "surface": "民生"
-      }
-    ],
-    "best": 9,
-    "best_path": [
-      11,
-      4,
-      7,
-      1,
-      14,
-      3,
-      0,
-      10,
-      6
-    ]
-  },
-  "day-3": {
-    "words": [
-      {
-        "reading": "じょせい",
-        "surface": "女性"
-      },
-      {
-        "reading": "すいとう",
-        "surface": "水筒"
-      },
-      {
-        "reading": "けんこうこつ",
-        "surface": "肩甲骨"
-      },
-      {
-        "reading": "やくがら",
-        "surface": "役柄"
-      },
-      {
-        "reading": "きゃくしゃ",
-        "surface": "客車"
-      },
-      {
-        "reading": "うちゅう",
-        "surface": "宇宙"
-      },
-      {
-        "reading": "としょ",
-        "surface": "図書"
-      },
-      {
-        "reading": "うなじ",
-        "surface": "項"
-      },
-      {
-        "reading": "しゃろう",
-        "surface": "社労"
-      },
-      {
-        "reading": "らんおう",
-        "surface": "卵黄"
-      },
-      {
-        "reading": "いざかや",
-        "surface": "居酒屋"
-      },
-      {
-        "reading": "たんたい",
-        "surface": "単体"
-      },
-      {
-        "reading": "しりょく",
-        "surface": "視力"
-      },
-      {
-        "reading": "やまと",
-        "surface": "やまと"
-      },
-      {
-        "reading": "りょうしゅ",
-        "surface": "領主"
-      },
-      {
-        "reading": "ようこう",
-        "surface": "要項"
-      }
-    ],
-    "best": 10,
-    "best_path": [
-      4,
-      3,
-      9,
-      5,
-      7,
-      0,
-      10,
-      13,
-      6,
-      15
-    ]
-  },
-  "day-4": {
-    "words": [
-      {
-        "reading": "おんしょく",
-        "surface": "音色"
-      },
-      {
-        "reading": "のうない",
-        "surface": "脳内"
-      },
-      {
-        "reading": "ぜいじゃく",
-        "surface": "脆弱"
-      },
-      {
-        "reading": "いろけ",
-        "surface": "色気"
-      },
-      {
-        "reading": "けいじょう",
-        "surface": "形状"
-      },
-      {
-        "reading": "ぎじゅつしゃ",
-        "surface": "技術者"
-      },
-      {
-        "reading": "みなみがわ",
-        "surface": "南側"
-      },
-      {
-        "reading": "いきもの",
-        "surface": "生き物"
-      },
-      {
-        "reading": "いいんかい",
-        "surface": "委員会"
-      },
-      {
-        "reading": "かいらく",
-        "surface": "快楽"
-      },
-      {
-        "reading": "じかた",
-        "surface": "地方"
-      },
-      {
-        "reading": "ほんごく",
-        "surface": "本国"
-      },
-      {
-        "reading": "おさけ",
-        "surface": "お酒"
-      },
-      {
-        "reading": "じゃくたい",
-        "surface": "弱体"
-      },
-      {
-        "reading": "うるおい",
-        "surface": "潤い"
-      },
-      {
-        "reading": "うさぎ",
-        "surface": "うさぎ"
-      }
-    ],
-    "best": 8,
-    "best_path": [
-      13,
-      7,
-      1,
-      8,
-      3,
-      4,
-      15,
-      5
-    ]
-  },
-  "day-5": {
-    "words": [
-      {
-        "reading": "いたい",
-        "surface": "遺体"
-      },
-      {
-        "reading": "ゆうし",
-        "surface": "有志"
-      },
-      {
-        "reading": "とうにゅう",
-        "surface": "豆乳"
-      },
-      {
-        "reading": "がくしょう",
-        "surface": "楽章"
-      },
-      {
-        "reading": "しょくりょう",
-        "surface": "食料"
-      },
-      {
-        "reading": "へいや",
-        "surface": "平野"
-      },
-      {
-        "reading": "いちない",
-        "surface": "市内"
-      },
-      {
-        "reading": "だいぜんてい",
-        "surface": "大前提"
-      },
-      {
-        "reading": "あるとき",
-        "surface": "ある時"
-      },
-      {
-        "reading": "めがみ",
-        "surface": "女神"
-      },
-      {
-        "reading": "くない",
-        "surface": "区内"
-      },
-      {
-        "reading": "やくみ",
-        "surface": "薬味"
-      },
-      {
-        "reading": "じつりょく",
-        "surface": "実力"
-      },
-      {
-        "reading": "たいら",
-        "surface": "平"
-      },
-      {
-        "reading": "いっしゅ",
-        "surface": "一種"
-      },
-      {
-        "reading": "みんぞく",
-        "surface": "民族"
-      }
-    ],
-    "best": 9,
-    "best_path": [
-      5,
-      11,
-      15,
-      10,
-      0,
-      6,
-      14,
-      1,
-      4
-    ]
-  },
-  "day-6": {
-    "words": [
-      {
-        "reading": "れいじょう",
-        "surface": "令嬢"
-      },
-      {
-        "reading": "なまり",
-        "surface": "鉛"
-      },
-      {
-        "reading": "せいぞうもと",
-        "surface": "製造元"
-      },
-      {
-        "reading": "うるし",
-        "surface": "漆"
-      },
-      {
-        "reading": "あくむ",
-        "surface": "悪夢"
-      },
-      {
-        "reading": "きょくしょ",
-        "surface": "局所"
-      },
-      {
-        "reading": "きょうぶ",
-        "surface": "胸部"
-      },
-      {
-        "reading": "みだれ",
-        "surface": "乱れ"
-      },
-      {
-        "reading": "ぶどう",
-        "surface": "ぶどう"
-      },
-      {
-        "reading": "せもたれ",
-        "surface": "背もたれ"
-      },
-      {
-        "reading": "つなみ",
-        "surface": "津波"
-      },
-      {
-        "reading": "ゆうしきしゃ",
-        "surface": "有識者"
-      },
-      {
-        "reading": "かくしつ",
-        "surface": "角質"
-      },
-      {
-        "reading": "しつじ",
-        "surface": "執事"
-      },
-      {
-        "reading": "じはんき",
-        "surface": "自販機"
-      },
-      {
-        "reading": "いちづけ",
-        "surface": "位置づけ"
-      }
-    ],
-    "best": 9,
-    "best_path": [
-      12,
-      10,
-      7,
-      0,
-      3,
-      13,
-      14,
-      6,
-      8
-    ]
-  },
-  "day-7": {
-    "words": [
-      {
-        "reading": "いっせつ",
-        "surface": "一節"
-      },
-      {
-        "reading": "ねんしき",
-        "surface": "年式"
-      },
-      {
-        "reading": "しょるい",
-        "surface": "書類"
-      },
-      {
-        "reading": "げんりょう",
-        "surface": "原料"
+        "reading": "おおごと",
+        "surface": "大事"
       },
       {
         "reading": "りれき",
         "surface": "履歴"
       },
       {
-        "reading": "いびき",
-        "surface": "いびき"
+        "reading": "しちゅう",
+        "surface": "支柱"
       },
       {
-        "reading": "きへい",
-        "surface": "騎兵"
+        "reading": "くうどう",
+        "surface": "空洞"
       },
       {
-        "reading": "はんがく",
-        "surface": "半額"
+        "reading": "きちく",
+        "surface": "鬼畜"
+      }
+    ],
+    "best": 9,
+    "best_path": [
+      0,
+      12,
+      7,
+      4,
+      6,
+      8,
+      9,
+      15,
+      14
+    ]
+  },
+  "day-3": {
+    "words": [
+      {
+        "reading": "きんぱつ",
+        "surface": "金髪"
       },
       {
-        "reading": "なごり",
-        "surface": "名残"
+        "reading": "すいいき",
+        "surface": "水域"
       },
       {
-        "reading": "おとこ",
-        "surface": "男"
+        "reading": "とくい",
+        "surface": "特異"
       },
       {
-        "reading": "ほんさく",
-        "surface": "本作"
+        "reading": "きんだい",
+        "surface": "近代"
       },
       {
-        "reading": "こがね",
-        "surface": "黄金"
+        "reading": "なかゆび",
+        "surface": "中指"
       },
       {
-        "reading": "いぬねこ",
-        "surface": "犬猫"
+        "reading": "こまいぬ",
+        "surface": "狛犬"
       },
       {
-        "reading": "しんごうき",
-        "surface": "信号機"
+        "reading": "くしやき",
+        "surface": "串焼き"
+      },
+      {
+        "reading": "きょうき",
+        "surface": "狂気"
+      },
+      {
+        "reading": "みわけ",
+        "surface": "見分け"
+      },
+      {
+        "reading": "りんり",
+        "surface": "倫理"
+      },
+      {
+        "reading": "とりこ",
+        "surface": "虜"
       },
       {
         "reading": "きょり",
         "surface": "距離"
       },
       {
-        "reading": "いきがい",
-        "surface": "生きがい"
+        "reading": "わくない",
+        "surface": "枠内"
+      },
+      {
+        "reading": "りとく",
+        "surface": "利得"
+      },
+      {
+        "reading": "いきさき",
+        "surface": "行き先"
+      },
+      {
+        "reading": "くさり",
+        "surface": "鎖"
       }
     ],
     "best": 9,
     "best_path": [
-      2,
-      5,
-      6,
-      15,
-      12,
-      11,
       1,
-      14,
-      4
-    ]
-  },
-  "day-8": {
-    "words": [
-      {
-        "reading": "いしょく",
-        "surface": "異色"
-      },
-      {
-        "reading": "ろうれい",
-        "surface": "老齢"
-      },
-      {
-        "reading": "れいき",
-        "surface": "冷気"
-      },
-      {
-        "reading": "くろいろ",
-        "surface": "黒色"
-      },
-      {
-        "reading": "ようしょう",
-        "surface": "幼少"
-      },
-      {
-        "reading": "いなり",
-        "surface": "稲荷"
-      },
-      {
-        "reading": "きゅうりょう",
-        "surface": "給料"
-      },
-      {
-        "reading": "つうか",
-        "surface": "通貨"
-      },
-      {
-        "reading": "まほう",
-        "surface": "魔法"
-      },
-      {
-        "reading": "りくつ",
-        "surface": "理屈"
-      },
-      {
-        "reading": "しゅじんこう",
-        "surface": "主人公"
-      },
-      {
-        "reading": "どひょう",
-        "surface": "土俵"
-      },
-      {
-        "reading": "つかいがって",
-        "surface": "使い勝手"
-      },
-      {
-        "reading": "ゆうほどう",
-        "surface": "遊歩道"
-      },
-      {
-        "reading": "やけい",
-        "surface": "夜景"
-      },
-      {
-        "reading": "きかんしゃ",
-        "surface": "機関車"
-      }
-    ],
-    "best": 9,
-    "best_path": [
-      2,
-      15,
-      14,
-      0,
       3,
-      1,
-      5,
+      14,
+      7,
+      11,
       9,
-      7
+      13,
+      6,
+      0
     ]
   },
-  "day-9": {
+  "day-4": {
     "words": [
       {
-        "reading": "ばいりつ",
-        "surface": "倍率"
+        "reading": "えらび",
+        "surface": "選び"
       },
       {
-        "reading": "てんぽ",
-        "surface": "店舗"
+        "reading": "やとう",
+        "surface": "野党"
       },
       {
-        "reading": "ぶつりがく",
-        "surface": "物理学"
+        "reading": "おふろ",
+        "surface": "お風呂"
       },
       {
-        "reading": "しぼう",
-        "surface": "脂肪"
+        "reading": "どくしゃ",
+        "surface": "読者"
       },
       {
-        "reading": "ほんぶ",
-        "surface": "本部"
+        "reading": "きじょ",
+        "surface": "機序"
+      },
+      {
+        "reading": "うきよえ",
+        "surface": "浮世絵"
+      },
+      {
+        "reading": "くさり",
+        "surface": "鎖"
+      },
+      {
+        "reading": "わがくに",
+        "surface": "我が国"
+      },
+      {
+        "reading": "じくあし",
+        "surface": "軸足"
+      },
+      {
+        "reading": "かどまつ",
+        "surface": "門松"
       },
       {
         "reading": "ぎょく",
         "surface": "玉"
       },
       {
-        "reading": "うんき",
-        "surface": "運気"
+        "reading": "りょうど",
+        "surface": "領土"
       },
       {
-        "reading": "せいでんき",
-        "surface": "静電気"
+        "reading": "こんれい",
+        "surface": "婚礼"
       },
       {
-        "reading": "あおむけ",
-        "surface": "仰向け"
+        "reading": "しんぷ",
+        "surface": "新婦"
       },
       {
-        "reading": "くうふく",
-        "surface": "空腹"
+        "reading": "おんば",
+        "surface": "音場"
       },
       {
-        "reading": "きんにく",
-        "surface": "筋肉"
+        "reading": "とくぎ",
+        "surface": "特技"
+      }
+    ],
+    "best": 8,
+    "best_path": [
+      15,
+      10,
+      6,
+      11,
+      3,
+      1,
+      5,
+      0
+    ]
+  },
+  "day-5": {
+    "words": [
+      {
+        "reading": "やつら",
+        "surface": "奴ら"
+      },
+      {
+        "reading": "ろかた",
+        "surface": "路肩"
+      },
+      {
+        "reading": "さむさ",
+        "surface": "寒さ"
+      },
+      {
+        "reading": "こぜに",
+        "surface": "小銭"
+      },
+      {
+        "reading": "めがみ",
+        "surface": "女神"
+      },
+      {
+        "reading": "うでまえ",
+        "surface": "腕前"
+      },
+      {
+        "reading": "らーゆ",
+        "surface": "ラー油"
+      },
+      {
+        "reading": "えがら",
+        "surface": "絵柄"
+      },
+      {
+        "reading": "こぶくろ",
+        "surface": "小袋"
+      },
+      {
+        "reading": "たいけい",
+        "surface": "体型"
+      },
+      {
+        "reading": "しょきち",
+        "surface": "初期値"
+      },
+      {
+        "reading": "たのしさ",
+        "surface": "楽しさ"
+      },
+      {
+        "reading": "ぜいほう",
+        "surface": "税法"
+      },
+      {
+        "reading": "さくふう",
+        "surface": "作風"
+      },
+      {
+        "reading": "つくだに",
+        "surface": "佃煮"
+      },
+      {
+        "reading": "ゆうこう",
+        "surface": "友好"
+      }
+    ],
+    "best": 9,
+    "best_path": [
+      8,
+      1,
+      11,
+      2,
+      13,
+      5,
+      7,
+      6,
+      15
+    ]
+  },
+  "day-6": {
+    "words": [
+      {
+        "reading": "ざこつ",
+        "surface": "坐骨"
+      },
+      {
+        "reading": "よりょく",
+        "surface": "余力"
+      },
+      {
+        "reading": "つばめ",
+        "surface": "燕"
+      },
+      {
+        "reading": "けいつい",
+        "surface": "頚椎"
+      },
+      {
+        "reading": "げんしょ",
+        "surface": "原初"
       },
       {
         "reading": "くされ",
         "surface": "腐れ"
       },
       {
-        "reading": "ぎょこう",
-        "surface": "漁港"
+        "reading": "ふない",
+        "surface": "府内"
+      },
+      {
+        "reading": "あまどい",
+        "surface": "雨樋"
+      },
+      {
+        "reading": "げんがく",
+        "surface": "弦楽"
+      },
+      {
+        "reading": "さいじ",
+        "surface": "催事"
+      },
+      {
+        "reading": "くせげ",
+        "surface": "くせ毛"
+      },
+      {
+        "reading": "せせらぎ",
+        "surface": "せせらぎ"
+      },
+      {
+        "reading": "れんげ",
+        "surface": "蓮華"
+      },
+      {
+        "reading": "りんかく",
+        "surface": "輪郭"
+      },
+      {
+        "reading": "いびき",
+        "surface": "いびき"
+      },
+      {
+        "reading": "じどり",
+        "surface": "地鶏"
+      }
+    ],
+    "best": 9,
+    "best_path": [
+      9,
+      15,
+      13,
+      5,
+      12,
+      4,
+      1,
+      10,
+      8
+    ]
+  },
+  "day-7": {
+    "words": [
+      {
+        "reading": "おおば",
+        "surface": "大葉"
+      },
+      {
+        "reading": "あまざけ",
+        "surface": "甘酒"
+      },
+      {
+        "reading": "いもうと",
+        "surface": "妹"
+      },
+      {
+        "reading": "ねんど",
+        "surface": "年度"
+      },
+      {
+        "reading": "りやく",
+        "surface": "利益"
+      },
+      {
+        "reading": "どうこく",
+        "surface": "同国"
+      },
+      {
+        "reading": "におい",
+        "surface": "匂い"
+      },
+      {
+        "reading": "こうせき",
+        "surface": "功績"
+      },
+      {
+        "reading": "たから",
+        "surface": "宝"
+      },
+      {
+        "reading": "くうせき",
+        "surface": "空席"
+      },
+      {
+        "reading": "きょり",
+        "surface": "距離"
+      },
+      {
+        "reading": "くにぐに",
+        "surface": "国々"
+      },
+      {
+        "reading": "おおで",
+        "surface": "大手"
+      },
+      {
+        "reading": "おちこみ",
+        "surface": "落ち込み"
+      },
+      {
+        "reading": "しょう",
+        "surface": "商"
+      },
+      {
+        "reading": "しばいぬ",
+        "surface": "柴犬"
+      }
+    ],
+    "best": 8,
+    "best_path": [
+      3,
+      5,
+      9,
+      10,
+      4,
+      11,
+      6,
+      2
+    ]
+  },
+  "day-8": {
+    "words": [
+      {
+        "reading": "みんか",
+        "surface": "民家"
+      },
+      {
+        "reading": "りょう",
+        "surface": "量"
+      },
+      {
+        "reading": "たてぐ",
+        "surface": "建具"
+      },
+      {
+        "reading": "かみなり",
+        "surface": "雷"
+      },
+      {
+        "reading": "きんしょ",
+        "surface": "禁書"
+      },
+      {
+        "reading": "よみもの",
+        "surface": "読み物"
+      },
+      {
+        "reading": "こども",
+        "surface": "子ども"
+      },
+      {
+        "reading": "うりば",
+        "surface": "売り場"
+      },
+      {
+        "reading": "げつがく",
+        "surface": "月額"
+      },
+      {
+        "reading": "のぞみ",
+        "surface": "望み"
+      },
+      {
+        "reading": "めんや",
+        "surface": "麺屋"
+      },
+      {
+        "reading": "まっか",
+        "surface": "真っ赤"
+      },
+      {
+        "reading": "びじゅつ",
+        "surface": "美術"
+      },
+      {
+        "reading": "たいせき",
+        "surface": "体積"
+      },
+      {
+        "reading": "かわらけ",
+        "surface": "土器"
+      },
+      {
+        "reading": "せいせき",
+        "surface": "成績"
+      }
+    ],
+    "best": 8,
+    "best_path": [
+      13,
+      4,
+      5,
+      9,
+      0,
+      3,
+      1,
+      7
+    ]
+  },
+  "day-9": {
+    "words": [
+      {
+        "reading": "しょうよ",
+        "surface": "賞与"
+      },
+      {
+        "reading": "はまき",
+        "surface": "葉巻"
+      },
+      {
+        "reading": "うえき",
+        "surface": "植木"
+      },
+      {
+        "reading": "りょう",
+        "surface": "量"
+      },
+      {
+        "reading": "ゆりかご",
+        "surface": "ゆりかご"
+      },
+      {
+        "reading": "かんかく",
+        "surface": "感覚"
+      },
+      {
+        "reading": "いきがい",
+        "surface": "生きがい"
+      },
+      {
+        "reading": "へいき",
+        "surface": "兵器"
+      },
+      {
+        "reading": "きへい",
+        "surface": "騎兵"
+      },
+      {
+        "reading": "そくてい",
+        "surface": "足底"
+      },
+      {
+        "reading": "いなり",
+        "surface": "稲荷"
+      },
+      {
+        "reading": "さっし",
+        "surface": "冊子"
+      },
+      {
+        "reading": "むねにく",
+        "surface": "胸肉"
+      },
+      {
+        "reading": "がいろ",
+        "surface": "街路"
+      },
+      {
+        "reading": "きょうい",
+        "surface": "脅威"
+      },
+      {
+        "reading": "いりくち",
+        "surface": "入り口"
+      }
+    ],
+    "best": 8,
+    "best_path": [
+      1,
+      8,
+      6,
+      10,
+      3,
+      2,
+      14,
+      15
+    ]
+  },
+  "day-10": {
+    "words": [
+      {
+        "reading": "うきよえ",
+        "surface": "浮世絵"
+      },
+      {
+        "reading": "とくゆう",
+        "surface": "特有"
+      },
+      {
+        "reading": "いちがい",
+        "surface": "一概"
+      },
+      {
+        "reading": "がろう",
+        "surface": "画廊"
+      },
+      {
+        "reading": "うらない",
+        "surface": "占"
+      },
+      {
+        "reading": "きしょう",
+        "surface": "気象"
+      },
+      {
+        "reading": "えんだか",
+        "surface": "円高"
+      },
+      {
+        "reading": "いっしつ",
+        "surface": "一室"
+      },
+      {
+        "reading": "はいざら",
+        "surface": "灰皿"
+      },
+      {
+        "reading": "かぎょう",
+        "surface": "家業"
+      },
+      {
+        "reading": "おせじ",
+        "surface": "お世辞"
+      },
+      {
+        "reading": "できばえ",
+        "surface": "出来栄え"
+      },
+      {
+        "reading": "いたこと",
+        "surface": "いた事"
+      },
+      {
+        "reading": "かんすう",
+        "surface": "関数"
+      },
+      {
+        "reading": "にるい",
+        "surface": "二塁"
+      },
+      {
+        "reading": "はえぎわ",
+        "surface": "生え際"
+      }
+    ],
+    "best": 9,
+    "best_path": [
+      14,
+      2,
+      12,
+      1,
+      0,
+      6,
+      9,
+      4,
+      7
+    ]
+  },
+  "day-11": {
+    "words": [
+      {
+        "reading": "せんちゃ",
+        "surface": "煎茶"
+      },
+      {
+        "reading": "かすみ",
+        "surface": "霞"
+      },
+      {
+        "reading": "くるしさ",
+        "surface": "苦しさ"
+      },
+      {
+        "reading": "よわい",
+        "surface": "齢"
+      },
+      {
+        "reading": "このした",
+        "surface": "木の下"
+      },
+      {
+        "reading": "きばこ",
+        "surface": "木箱"
+      },
+      {
+        "reading": "つきづき",
+        "surface": "月々"
+      },
+      {
+        "reading": "きょく",
+        "surface": "曲"
+      },
+      {
+        "reading": "しっけ",
+        "surface": "湿気"
+      },
+      {
+        "reading": "みならい",
+        "surface": "見習い"
+      },
+      {
+        "reading": "ひばな",
+        "surface": "火花"
+      },
+      {
+        "reading": "ひめい",
+        "surface": "悲鳴"
+      },
+      {
+        "reading": "たいねつ",
+        "surface": "耐熱"
+      },
+      {
+        "reading": "かかと",
+        "surface": "かかと"
+      },
+      {
+        "reading": "さっし",
+        "surface": "冊子"
+      },
+      {
+        "reading": "けんち",
+        "surface": "見地"
+      }
+    ],
+    "best": 9,
+    "best_path": [
+      5,
+      4,
+      12,
+      6,
+      7,
+      2,
+      14,
+      8,
+      15
+    ]
+  },
+  "day-12": {
+    "words": [
+      {
+        "reading": "しゃさい",
+        "surface": "社債"
+      },
+      {
+        "reading": "ぶちょう",
+        "surface": "部長"
+      },
+      {
+        "reading": "まぼろし",
+        "surface": "幻"
+      },
+      {
+        "reading": "えんがわ",
+        "surface": "縁側"
+      },
+      {
+        "reading": "てんない",
+        "surface": "店内"
+      },
+      {
+        "reading": "みっしつ",
+        "surface": "密室"
+      },
+      {
+        "reading": "すいそう",
+        "surface": "水槽"
+      },
+      {
+        "reading": "つめあと",
+        "surface": "爪痕"
+      },
+      {
+        "reading": "ふうとう",
+        "surface": "封筒"
+      },
+      {
+        "reading": "じゅれい",
+        "surface": "樹齢"
+      },
+      {
+        "reading": "いっしき",
+        "surface": "一式"
+      },
+      {
+        "reading": "かつじ",
+        "surface": "活字"
+      },
+      {
+        "reading": "はんけい",
+        "surface": "半径"
+      },
+      {
+        "reading": "きじつ",
+        "surface": "期日"
+      },
+      {
+        "reading": "せいぶつ",
+        "surface": "生物"
+      },
+      {
+        "reading": "いなか",
+        "surface": "田舎"
+      }
+    ],
+    "best": 8,
+    "best_path": [
+      2,
+      0,
+      15,
+      11,
+      9,
+      10,
+      13,
+      7
+    ]
+  },
+  "day-13": {
+    "words": [
+      {
+        "reading": "かがい",
+        "surface": "加害"
+      },
+      {
+        "reading": "うまれ",
+        "surface": "生まれ"
+      },
+      {
+        "reading": "ぜんそく",
+        "surface": "喘息"
+      },
+      {
+        "reading": "とうひ",
+        "surface": "頭皮"
+      },
+      {
+        "reading": "めいぼ",
+        "surface": "名簿"
+      },
+      {
+        "reading": "ぼうや",
+        "surface": "坊や"
+      },
+      {
+        "reading": "ふところ",
+        "surface": "懐"
+      },
+      {
+        "reading": "ゆうぐ",
+        "surface": "遊具"
+      },
+      {
+        "reading": "うちゆ",
+        "surface": "内湯"
+      },
+      {
+        "reading": "せっき",
+        "surface": "石器"
+      },
+      {
+        "reading": "じびょう",
+        "surface": "持病"
+      },
+      {
+        "reading": "いったい",
+        "surface": "一体"
+      },
+      {
+        "reading": "じょてい",
+        "surface": "女帝"
+      },
+      {
+        "reading": "やいば",
+        "surface": "刃"
+      },
+      {
+        "reading": "ばいすう",
+        "surface": "倍数"
       },
       {
         "reading": "れいぼう",
         "surface": "冷房"
-      },
-      {
-        "reading": "りょうがわ",
-        "surface": "両側"
-      },
-      {
-        "reading": "くろまく",
-        "surface": "黒幕"
       }
     ],
     "best": 8,
     "best_path": [
       4,
+      5,
+      13,
+      14,
+      1,
+      15,
+      8,
+      7
+    ]
+  },
+  "day-14": {
+    "words": [
+      {
+        "reading": "いただき",
+        "surface": "いただき"
+      },
+      {
+        "reading": "ともだち",
+        "surface": "友達"
+      },
+      {
+        "reading": "かなぐ",
+        "surface": "金具"
+      },
+      {
+        "reading": "いっと",
+        "surface": "一途"
+      },
+      {
+        "reading": "しへい",
+        "surface": "紙幣"
+      },
+      {
+        "reading": "ばたけ",
+        "surface": "畑"
+      },
+      {
+        "reading": "さしえ",
+        "surface": "挿絵"
+      },
+      {
+        "reading": "ぎかい",
+        "surface": "議会"
+      },
+      {
+        "reading": "いがくぶ",
+        "surface": "医学部"
+      },
+      {
+        "reading": "ほうじゅ",
+        "surface": "宝珠"
+      },
+      {
+        "reading": "さなぎ",
+        "surface": "蛹"
+      },
+      {
+        "reading": "とくぎ",
+        "surface": "特技"
+      },
+      {
+        "reading": "しょそく",
+        "surface": "初速"
+      },
+      {
+        "reading": "ちちおや",
+        "surface": "父親"
+      },
+      {
+        "reading": "むらさき",
+        "surface": "紫"
+      },
+      {
+        "reading": "やまざと",
+        "surface": "山里"
+      }
+    ],
+    "best": 8,
+    "best_path": [
+      4,
+      3,
+      1,
+      13,
+      15,
+      11,
+      7,
+      0
+    ]
+  },
+  "day-15": {
+    "words": [
+      {
+        "reading": "つりばし",
+        "surface": "吊り橋"
+      },
+      {
+        "reading": "きあつ",
+        "surface": "気圧"
+      },
+      {
+        "reading": "いみあい",
+        "surface": "意味合い"
+      },
+      {
+        "reading": "じどり",
+        "surface": "地鶏"
+      },
+      {
+        "reading": "しろみ",
+        "surface": "白身"
+      },
+      {
+        "reading": "いぶき",
+        "surface": "息吹"
+      },
+      {
+        "reading": "かみいろ",
+        "surface": "髪色"
+      },
+      {
+        "reading": "ふぶき",
+        "surface": "吹雪"
+      },
+      {
+        "reading": "おやき",
+        "surface": "親機"
+      },
+      {
+        "reading": "えもじ",
+        "surface": "絵文字"
+      },
+      {
+        "reading": "はながめ",
+        "surface": "花瓶"
+      },
+      {
+        "reading": "りけい",
+        "surface": "理系"
+      },
+      {
+        "reading": "しょしき",
+        "surface": "書式"
+      },
+      {
+        "reading": "びはつ",
+        "surface": "美髪"
+      },
+      {
+        "reading": "はっぱ",
+        "surface": "葉っぱ"
+      },
+      {
+        "reading": "みずのえ",
+        "surface": "壬"
+      }
+    ],
+    "best": 10,
+    "best_path": [
+      4,
+      15,
+      9,
+      3,
+      11,
       2,
+      5,
+      1,
+      0,
+      12
+    ]
+  },
+  "day-16": {
+    "words": [
+      {
+        "reading": "おんど",
+        "surface": "温度"
+      },
+      {
+        "reading": "ふうけい",
+        "surface": "風景"
+      },
+      {
+        "reading": "くらもと",
+        "surface": "蔵元"
+      },
+      {
+        "reading": "ようけい",
+        "surface": "養鶏"
+      },
+      {
+        "reading": "びしょう",
+        "surface": "微小"
+      },
+      {
+        "reading": "はいぶつ",
+        "surface": "廃物"
+      },
+      {
+        "reading": "かみのけ",
+        "surface": "髪の毛"
+      },
+      {
+        "reading": "かたち",
+        "surface": "形"
+      },
+      {
+        "reading": "こくせき",
+        "surface": "国籍"
+      },
+      {
+        "reading": "まつび",
+        "surface": "末尾"
+      },
+      {
+        "reading": "びじゅつ",
+        "surface": "美術"
+      },
+      {
+        "reading": "ときのま",
+        "surface": "時の間"
+      },
+      {
+        "reading": "うきぼり",
+        "surface": "浮き彫り"
+      },
+      {
+        "reading": "すみび",
+        "surface": "炭火"
+      },
+      {
+        "reading": "にくしみ",
+        "surface": "憎しみ"
+      },
+      {
+        "reading": "りやく",
+        "surface": "利益"
+      }
+    ],
+    "best": 8,
+    "best_path": [
+      13,
+      4,
+      12,
+      15,
+      2,
+      11,
+      9,
+      10
+    ]
+  },
+  "day-17": {
+    "words": [
+      {
+        "reading": "きんこう",
+        "surface": "近郊"
+      },
+      {
+        "reading": "げすい",
+        "surface": "下水"
+      },
+      {
+        "reading": "べんとう",
+        "surface": "弁当"
+      },
+      {
+        "reading": "うらて",
+        "surface": "裏手"
+      },
+      {
+        "reading": "いばしょ",
+        "surface": "居場所"
+      },
+      {
+        "reading": "ようへき",
+        "surface": "擁壁"
+      },
+      {
+        "reading": "しんぷ",
+        "surface": "新婦"
+      },
+      {
+        "reading": "ひとづま",
+        "surface": "人妻"
+      },
+      {
+        "reading": "きがい",
+        "surface": "危害"
+      },
+      {
+        "reading": "うみべ",
+        "surface": "海辺"
+      },
+      {
+        "reading": "みょうじ",
+        "surface": "名字"
+      },
+      {
+        "reading": "かくに",
+        "surface": "角煮"
+      },
+      {
+        "reading": "ちんぽ",
+        "surface": "ちんぽ"
+      },
+      {
+        "reading": "ひほう",
+        "surface": "秘宝"
+      },
+      {
+        "reading": "てのこう",
+        "surface": "手の甲"
+      },
+      {
+        "reading": "ばくそく",
+        "surface": "爆速"
+      }
+    ],
+    "best": 8,
+    "best_path": [
+      1,
+      4,
+      5,
+      0,
+      3,
+      14,
+      9,
+      2
+    ]
+  },
+  "day-18": {
+    "words": [
+      {
+        "reading": "かめい",
+        "surface": "仮名"
+      },
+      {
+        "reading": "きゅうし",
+        "surface": "臼歯"
+      },
+      {
+        "reading": "じどり",
+        "surface": "地鶏"
+      },
+      {
+        "reading": "かたがみ",
+        "surface": "型紙"
+      },
+      {
+        "reading": "びりょう",
+        "surface": "微量"
+      },
+      {
+        "reading": "かわら",
+        "surface": "瓦"
+      },
+      {
+        "reading": "しんび",
+        "surface": "審美"
+      },
+      {
+        "reading": "ゆうき",
+        "surface": "勇気"
+      },
+      {
+        "reading": "うまどし",
+        "surface": "午年"
+      },
+      {
+        "reading": "らんぽう",
+        "surface": "卵胞"
+      },
+      {
+        "reading": "すいいき",
+        "surface": "水域"
+      },
+      {
+        "reading": "にぎわい",
+        "surface": "賑わい"
+      },
+      {
+        "reading": "しんしゅ",
+        "surface": "新種"
+      },
+      {
+        "reading": "りれき",
+        "surface": "履歴"
+      },
+      {
+        "reading": "きんしゅ",
+        "surface": "筋腫"
+      },
+      {
+        "reading": "つきごと",
+        "surface": "月ごと"
+      }
+    ],
+    "best": 9,
+    "best_path": [
+      2,
+      13,
+      1,
+      6,
+      4,
+      8,
+      12,
+      7,
+      14
+    ]
+  },
+  "day-19": {
+    "words": [
+      {
+        "reading": "くいき",
+        "surface": "区域"
+      },
+      {
+        "reading": "ぎょうじ",
+        "surface": "行事"
+      },
+      {
+        "reading": "どにち",
+        "surface": "土日"
+      },
+      {
+        "reading": "じしゅ",
+        "surface": "自主"
+      },
+      {
+        "reading": "きめて",
+        "surface": "決め手"
+      },
+      {
+        "reading": "ふともも",
+        "surface": "太もも"
+      },
+      {
+        "reading": "したむき",
+        "surface": "下向き"
+      },
+      {
+        "reading": "ていれい",
+        "surface": "定例"
+      },
+      {
+        "reading": "えんじゃ",
+        "surface": "演者"
+      },
+      {
+        "reading": "つぼみ",
+        "surface": "蕾"
+      },
+      {
+        "reading": "ものごし",
+        "surface": "物腰"
+      },
+      {
+        "reading": "ならく",
+        "surface": "奈落"
+      },
+      {
+        "reading": "じつわ",
+        "surface": "実話"
+      },
+      {
+        "reading": "わめい",
+        "surface": "和名"
+      },
+      {
+        "reading": "ごさんけ",
+        "surface": "御三家"
+      },
+      {
+        "reading": "いそぎ",
+        "surface": "急ぎ"
+      }
+    ],
+    "best": 9,
+    "best_path": [
+      5,
+      10,
+      6,
+      4,
+      7,
+      15,
+      1,
+      12,
+      13
+    ]
+  },
+  "day-20": {
+    "words": [
+      {
+        "reading": "いわば",
+        "surface": "岩場"
+      },
+      {
+        "reading": "くみかた",
+        "surface": "組み方"
+      },
+      {
+        "reading": "くみあい",
+        "surface": "組合"
+      },
+      {
+        "reading": "どんぐり",
+        "surface": "どんぐり"
+      },
+      {
+        "reading": "こうち",
+        "surface": "高地"
+      },
+      {
+        "reading": "おおぞら",
+        "surface": "大空"
+      },
+      {
+        "reading": "いえけい",
+        "surface": "家系"
+      },
+      {
+        "reading": "らんし",
+        "surface": "卵子"
+      },
+      {
+        "reading": "ぶったい",
+        "surface": "物体"
+      },
+      {
+        "reading": "ばくそく",
+        "surface": "爆速"
+      },
+      {
+        "reading": "みがら",
+        "surface": "身柄"
+      },
+      {
+        "reading": "だんじり",
+        "surface": "だんじり"
+      },
+      {
+        "reading": "あかまる",
+        "surface": "赤丸"
+      },
+      {
+        "reading": "たいほう",
+        "surface": "大砲"
+      },
+      {
+        "reading": "がくぶち",
+        "surface": "額縁"
+      },
+      {
+        "reading": "しのぶ",
+        "surface": "忍"
+      }
+    ],
+    "best": 9,
+    "best_path": [
+      5,
+      7,
+      15,
+      8,
+      6,
+      0,
+      9,
+      1,
+      13
+    ]
+  },
+  "day-21": {
+    "words": [
+      {
+        "reading": "おわり",
+        "surface": "終"
+      },
+      {
+        "reading": "さいやく",
+        "surface": "災厄"
+      },
+      {
+        "reading": "ぼだいじ",
+        "surface": "菩提寺"
+      },
+      {
+        "reading": "かんしつ",
+        "surface": "間質"
+      },
+      {
+        "reading": "わっか",
+        "surface": "輪っか"
+      },
+      {
+        "reading": "ひだりて",
+        "surface": "左手"
+      },
+      {
+        "reading": "まぎわ",
+        "surface": "間際"
+      },
+      {
+        "reading": "つりざお",
+        "surface": "釣り竿"
+      },
+      {
+        "reading": "みずたま",
+        "surface": "水玉"
+      },
+      {
+        "reading": "りょひ",
+        "surface": "旅費"
+      },
+      {
+        "reading": "みぎがわ",
+        "surface": "右側"
+      },
+      {
+        "reading": "かたがわ",
+        "surface": "片側"
+      },
+      {
+        "reading": "ようもう",
+        "surface": "羊毛"
+      },
+      {
+        "reading": "かじゅ",
+        "surface": "果樹"
+      },
+      {
+        "reading": "てぬぐい",
+        "surface": "手ぬぐい"
+      },
+      {
+        "reading": "れっしゃ",
+        "surface": "列車"
+      }
+    ],
+    "best": 9,
+    "best_path": [
+      8,
+      6,
+      4,
+      3,
+      7,
+      0,
+      9,
+      5,
+      14
+    ]
+  },
+  "day-22": {
+    "words": [
+      {
+        "reading": "ひだりめ",
+        "surface": "左目"
+      },
+      {
+        "reading": "みなみ",
+        "surface": "南"
+      },
+      {
+        "reading": "じんち",
+        "surface": "陣地"
+      },
+      {
+        "reading": "うらやま",
+        "surface": "裏山"
+      },
+      {
+        "reading": "つわり",
+        "surface": "つわり"
+      },
+      {
+        "reading": "ねんえき",
+        "surface": "粘液"
+      },
+      {
+        "reading": "ぎんこう",
+        "surface": "銀行"
+      },
+      {
+        "reading": "りょひ",
+        "surface": "旅費"
+      },
+      {
+        "reading": "うちゅう",
+        "surface": "宇宙"
+      },
+      {
+        "reading": "めいぎ",
+        "surface": "名義"
+      },
+      {
+        "reading": "あつあつ",
+        "surface": "熱々"
+      },
+      {
+        "reading": "けいばつ",
+        "surface": "刑罰"
+      },
+      {
+        "reading": "いちない",
+        "surface": "市内"
+      },
+      {
+        "reading": "ぼさつ",
+        "surface": "菩薩"
+      },
+      {
+        "reading": "むけい",
+        "surface": "無形"
+      },
+      {
+        "reading": "なつば",
+        "surface": "夏場"
+      }
+    ],
+    "best": 8,
+    "best_path": [
+      10,
+      4,
+      7,
+      0,
+      9,
+      6,
+      8,
+      3
+    ]
+  },
+  "day-23": {
+    "words": [
+      {
+        "reading": "じじょう",
+        "surface": "事情"
+      },
+      {
+        "reading": "いちや",
+        "surface": "一夜"
+      },
+      {
+        "reading": "おおね",
+        "surface": "大根"
+      },
+      {
+        "reading": "たけぐし",
+        "surface": "竹串"
+      },
+      {
+        "reading": "じちょう",
+        "surface": "次長"
+      },
+      {
+        "reading": "ぶくろ",
+        "surface": "袋"
+      },
+      {
+        "reading": "あるとき",
+        "surface": "ある時"
+      },
+      {
+        "reading": "こくえい",
+        "surface": "国営"
+      },
+      {
+        "reading": "しいたけ",
+        "surface": "しいたけ"
+      },
+      {
+        "reading": "ごうてい",
+        "surface": "豪邸"
+      },
+      {
+        "reading": "いえけい",
+        "surface": "家系"
+      },
+      {
+        "reading": "こうら",
+        "surface": "甲羅"
+      },
+      {
+        "reading": "りゃく",
+        "surface": "略"
+      },
+      {
+        "reading": "けいざい",
+        "surface": "経済"
+      },
+      {
+        "reading": "やました",
+        "surface": "山下"
+      },
+      {
+        "reading": "けんり",
+        "surface": "権利"
+      }
+    ],
+    "best": 8,
+    "best_path": [
+      7,
+      10,
+      1,
+      14,
+      3,
+      8,
+      15,
+      12
+    ]
+  },
+  "day-24": {
+    "words": [
+      {
+        "reading": "なめこ",
+        "surface": "なめこ"
+      },
+      {
+        "reading": "しんきょ",
+        "surface": "新居"
+      },
+      {
+        "reading": "まんま",
+        "surface": "まんま"
+      },
+      {
+        "reading": "こもれび",
+        "surface": "木漏れ日"
+      },
+      {
+        "reading": "そとかべ",
+        "surface": "外壁"
+      },
+      {
+        "reading": "よこじく",
+        "surface": "横軸"
+      },
+      {
+        "reading": "まけいぬ",
+        "surface": "負け犬"
+      },
+      {
+        "reading": "うねり",
+        "surface": "うねり"
+      },
+      {
+        "reading": "かせい",
+        "surface": "火星"
+      },
+      {
+        "reading": "ぬまち",
+        "surface": "沼地"
+      },
+      {
+        "reading": "えんたく",
+        "surface": "円卓"
+      },
+      {
+        "reading": "べんき",
+        "surface": "便器"
+      },
+      {
+        "reading": "つきひ",
+        "surface": "月日"
+      },
+      {
+        "reading": "いわやま",
+        "surface": "岩山"
+      },
+      {
+        "reading": "こまち",
+        "surface": "小町"
+      },
+      {
+        "reading": "きんか",
+        "surface": "金貨"
+      }
+    ],
+    "best": 8,
+    "best_path": [
+      4,
+      11,
+      15,
+      8,
+      13,
+      2,
+      6,
+      9
+    ]
+  },
+  "day-25": {
+    "words": [
+      {
+        "reading": "びだい",
+        "surface": "美大"
+      },
+      {
+        "reading": "とどけ",
+        "surface": "届"
+      },
+      {
+        "reading": "あやめ",
+        "surface": "あやめ"
+      },
+      {
+        "reading": "うそく",
+        "surface": "右側"
+      },
+      {
+        "reading": "いろがみ",
+        "surface": "色紙"
+      },
+      {
+        "reading": "ただなか",
+        "surface": "只中"
+      },
+      {
+        "reading": "いちるい",
+        "surface": "一塁"
+      },
+      {
+        "reading": "みぎがわ",
+        "surface": "右側"
+      },
+      {
+        "reading": "おきまり",
+        "surface": "お決まり"
+      },
+      {
+        "reading": "いわい",
+        "surface": "祝"
+      },
+      {
+        "reading": "やっこ",
+        "surface": "奴"
+      },
+      {
+        "reading": "いきない",
+        "surface": "域内"
+      },
+      {
+        "reading": "げんごう",
+        "surface": "元号"
+      },
+      {
+        "reading": "こうう",
+        "surface": "降雨"
+      },
+      {
+        "reading": "ていそう",
+        "surface": "低層"
+      },
+      {
+        "reading": "くけい",
+        "surface": "矩形"
+      }
+    ],
+    "best": 9,
+    "best_path": [
+      10,
+      13,
+      3,
+      15,
+      6,
       9,
       11,
+      4,
+      7
+    ]
+  },
+  "day-26": {
+    "words": [
+      {
+        "reading": "うけざら",
+        "surface": "受け皿"
+      },
+      {
+        "reading": "わっか",
+        "surface": "輪っか"
+      },
+      {
+        "reading": "たかみ",
+        "surface": "高み"
+      },
+      {
+        "reading": "わふう",
+        "surface": "和風"
+      },
+      {
+        "reading": "こうう",
+        "surface": "降雨"
+      },
+      {
+        "reading": "しきょう",
+        "surface": "市況"
+      },
+      {
+        "reading": "きょせき",
+        "surface": "巨石"
+      },
+      {
+        "reading": "ぞうげ",
+        "surface": "象牙"
+      },
+      {
+        "reading": "きょう",
+        "surface": "教"
+      },
+      {
+        "reading": "かぶり",
+        "surface": "頭"
+      },
+      {
+        "reading": "じりき",
+        "surface": "自力"
+      },
+      {
+        "reading": "ごせんぞ",
+        "surface": "ご先祖"
+      },
+      {
+        "reading": "らてんご",
+        "surface": "ラテン語"
+      },
+      {
+        "reading": "きほう",
+        "surface": "気泡"
+      },
+      {
+        "reading": "げんせき",
+        "surface": "原石"
+      },
+      {
+        "reading": "おにく",
+        "surface": "お肉"
+      }
+    ],
+    "best": 9,
+    "best_path": [
+      10,
+      6,
+      8,
+      0,
+      12,
+      11,
+      7,
+      14,
+      13
+    ]
+  },
+  "day-27": {
+    "words": [
+      {
+        "reading": "なんいど",
+        "surface": "難易度"
+      },
+      {
+        "reading": "いつざい",
+        "surface": "逸材"
+      },
+      {
+        "reading": "くしゅう",
+        "surface": "句集"
+      },
+      {
+        "reading": "おやゆび",
+        "surface": "親指"
+      },
+      {
+        "reading": "いもうと",
+        "surface": "妹"
+      },
+      {
+        "reading": "おとなり",
+        "surface": "お隣"
+      },
+      {
+        "reading": "うまどし",
+        "surface": "午年"
+      },
+      {
+        "reading": "しやく",
+        "surface": "試薬"
+      },
+      {
+        "reading": "どのとき",
+        "surface": "どの時"
+      },
+      {
+        "reading": "しるし",
+        "surface": "印"
+      },
+      {
+        "reading": "どうよう",
+        "surface": "童謡"
+      },
+      {
+        "reading": "しょにち",
+        "surface": "初日"
+      },
+      {
+        "reading": "どうじ",
+        "surface": "同時"
+      },
+      {
+        "reading": "てんくう",
+        "surface": "天空"
+      },
+      {
+        "reading": "はどう",
+        "surface": "波動"
+      },
+      {
+        "reading": "うらて",
+        "surface": "裏手"
+      }
+    ],
+    "best": 8,
+    "best_path": [
+      0,
+      10,
+      6,
+      9,
+      7,
+      2,
+      15,
+      13
+    ]
+  },
+  "day-28": {
+    "words": [
+      {
+        "reading": "ごうり",
+        "surface": "合理"
+      },
+      {
+        "reading": "じじょう",
+        "surface": "事情"
+      },
+      {
+        "reading": "りゃくご",
+        "surface": "略語"
+      },
+      {
+        "reading": "うたいて",
+        "surface": "歌い手"
+      },
+      {
+        "reading": "よざくら",
+        "surface": "夜桜"
+      },
+      {
+        "reading": "ていり",
+        "surface": "定理"
+      },
+      {
+        "reading": "たぐい",
+        "surface": "類"
+      },
+      {
+        "reading": "せんない",
+        "surface": "船内"
+      },
+      {
+        "reading": "しょきち",
+        "surface": "初期値"
+      },
+      {
+        "reading": "じょせい",
+        "surface": "女性"
+      },
+      {
+        "reading": "らんぽう",
+        "surface": "卵胞"
+      },
+      {
+        "reading": "みさき",
+        "surface": "岬"
+      },
+      {
+        "reading": "かっこく",
+        "surface": "各国"
+      },
+      {
+        "reading": "からさ",
+        "surface": "辛さ"
+      },
+      {
+        "reading": "きんこ",
+        "surface": "金庫"
+      },
+      {
+        "reading": "りれき",
+        "surface": "履歴"
+      }
+    ],
+    "best": 8,
+    "best_path": [
+      4,
+      10,
+      3,
+      5,
+      2,
+      0,
+      15,
+      14
+    ]
+  },
+  "day-29": {
+    "words": [
+      {
+        "reading": "はんすう",
+        "surface": "半数"
+      },
+      {
+        "reading": "もうい",
+        "surface": "猛威"
+      },
+      {
+        "reading": "てっこつ",
+        "surface": "鉄骨"
+      },
+      {
+        "reading": "さんがく",
+        "surface": "山岳"
+      },
+      {
+        "reading": "とかい",
+        "surface": "都会"
+      },
+      {
+        "reading": "おさつ",
+        "surface": "お札"
+      },
+      {
+        "reading": "まなざし",
+        "surface": "眼差し"
+      },
+      {
+        "reading": "ふうふ",
+        "surface": "夫婦"
+      },
+      {
+        "reading": "くせげ",
+        "surface": "くせ毛"
+      },
+      {
+        "reading": "げんぼく",
+        "surface": "原木"
+      },
+      {
+        "reading": "りんごく",
+        "surface": "隣国"
+      },
+      {
+        "reading": "いろり",
+        "surface": "囲炉裏"
+      },
+      {
+        "reading": "くらもと",
+        "surface": "蔵元"
+      },
+      {
+        "reading": "ひいな",
+        "surface": "雛"
+      },
+      {
+        "reading": "いぞく",
+        "surface": "遺族"
+      },
+      {
+        "reading": "ひとう",
+        "surface": "秘湯"
+      }
+    ],
+    "best": 8,
+    "best_path": [
+      1,
+      11,
+      10,
+      8,
+      9,
+      12,
+      4,
+      14
+    ]
+  },
+  "day-30": {
+    "words": [
+      {
+        "reading": "なんど",
+        "surface": "難度"
+      },
+      {
+        "reading": "けいてい",
+        "surface": "兄弟"
+      },
+      {
+        "reading": "こうくう",
+        "surface": "航空"
+      },
+      {
+        "reading": "いきかた",
+        "surface": "生き方"
+      },
+      {
+        "reading": "くろねこ",
+        "surface": "黒猫"
+      },
+      {
+        "reading": "したず",
+        "surface": "下図"
+      },
+      {
+        "reading": "うたいて",
+        "surface": "歌い手"
+      },
+      {
+        "reading": "ぼにゅう",
+        "surface": "母乳"
+      },
+      {
+        "reading": "まうえ",
+        "surface": "真上"
+      },
+      {
+        "reading": "きそく",
+        "surface": "規則"
+      },
+      {
+        "reading": "むしやき",
+        "surface": "蒸し焼き"
+      },
+      {
+        "reading": "くうせき",
+        "surface": "空席"
+      },
+      {
+        "reading": "てっき",
+        "surface": "敵機"
+      },
+      {
+        "reading": "たいこく",
+        "surface": "大国"
+      },
+      {
+        "reading": "てきほう",
+        "surface": "適法"
+      },
+      {
+        "reading": "べっしつ",
+        "surface": "別室"
+      }
+    ],
+    "best": 9,
+    "best_path": [
+      1,
+      3,
       13,
+      4,
+      2,
+      6,
+      12,
+      9,
+      11
+    ]
+  },
+  "day-31": {
+    "words": [
+      {
+        "reading": "ひどうき",
+        "surface": "非同期"
+      },
+      {
+        "reading": "びいしき",
+        "surface": "美意識"
+      },
+      {
+        "reading": "いしょ",
+        "surface": "遺書"
+      },
+      {
+        "reading": "みやび",
+        "surface": "雅"
+      },
+      {
+        "reading": "やつら",
+        "surface": "奴ら"
+      },
+      {
+        "reading": "こんだて",
+        "surface": "献立"
+      },
+      {
+        "reading": "ぐあい",
+        "surface": "具合"
+      },
+      {
+        "reading": "きたい",
+        "surface": "機体"
+      },
+      {
+        "reading": "かけごえ",
+        "surface": "掛け声"
+      },
+      {
+        "reading": "びょうり",
+        "surface": "病理"
+      },
+      {
+        "reading": "ぶんぐ",
+        "surface": "文具"
+      },
+      {
+        "reading": "きょうぶ",
+        "surface": "胸部"
+      },
+      {
+        "reading": "かまど",
+        "surface": "かまど"
+      },
+      {
+        "reading": "はらわた",
+        "surface": "腸"
+      },
+      {
+        "reading": "いたみ",
+        "surface": "痛み"
+      },
+      {
+        "reading": "ままとも",
+        "surface": "ママ友"
+      }
+    ],
+    "best": 9,
+    "best_path": [
+      0,
+      7,
+      14,
+      3,
+      1,
+      11,
+      10,
+      6,
+      2
+    ]
+  },
+  "day-32": {
+    "words": [
+      {
+        "reading": "かくすう",
+        "surface": "画数"
+      },
+      {
+        "reading": "さいやく",
+        "surface": "災厄"
+      },
+      {
+        "reading": "しざい",
+        "surface": "資材"
+      },
+      {
+        "reading": "じょう",
+        "surface": "場"
+      },
+      {
+        "reading": "じんち",
+        "surface": "陣地"
+      },
+      {
+        "reading": "ぶしょ",
+        "surface": "部署"
+      },
+      {
+        "reading": "ようしょ",
+        "surface": "要所"
+      },
+      {
+        "reading": "むとう",
+        "surface": "無糖"
+      },
+      {
+        "reading": "くびすじ",
+        "surface": "首筋"
+      },
+      {
+        "reading": "いちじょ",
+        "surface": "一助"
+      },
+      {
+        "reading": "こうちゃ",
+        "surface": "紅茶"
+      },
+      {
+        "reading": "きょうぎ",
+        "surface": "教義"
+      },
+      {
+        "reading": "ひやあせ",
+        "surface": "冷や汗"
+      },
+      {
+        "reading": "うるおい",
+        "surface": "潤い"
+      },
+      {
+        "reading": "ようき",
+        "surface": "容器"
+      },
+      {
+        "reading": "だんがい",
+        "surface": "断崖"
+      }
+    ],
+    "best": 8,
+    "best_path": [
+      1,
+      8,
+      3,
+      13,
+      9,
+      6,
+      14,
+      11
+    ]
+  },
+  "day-33": {
+    "words": [
+      {
+        "reading": "せんごく",
+        "surface": "戦国"
+      },
+      {
+        "reading": "みのり",
+        "surface": "実り"
+      },
+      {
+        "reading": "ちゃや",
+        "surface": "茶屋"
+      },
+      {
+        "reading": "おざしき",
+        "surface": "お座敷"
+      },
+      {
+        "reading": "しょきち",
+        "surface": "初期値"
+      },
+      {
+        "reading": "ぐんばい",
+        "surface": "軍配"
+      },
+      {
+        "reading": "ぶんぐ",
+        "surface": "文具"
+      },
+      {
+        "reading": "けんり",
+        "surface": "権利"
+      },
+      {
+        "reading": "いきかた",
+        "surface": "生き方"
+      },
+      {
+        "reading": "こうぶ",
+        "surface": "後部"
+      },
+      {
+        "reading": "おおぜい",
+        "surface": "大勢"
+      },
+      {
+        "reading": "いでんし",
+        "surface": "遺伝子"
+      },
+      {
+        "reading": "あだな",
+        "surface": "あだ名"
+      },
+      {
+        "reading": "きみどり",
+        "surface": "黄緑"
+      },
+      {
+        "reading": "はだいろ",
+        "surface": "肌色"
+      },
+      {
+        "reading": "やすみ",
+        "surface": "休み"
+      }
+    ],
+    "best": 8,
+    "best_path": [
+      9,
+      6,
+      5,
+      11,
+      4,
+      2,
+      15,
+      1
+    ]
+  },
+  "day-34": {
+    "words": [
+      {
+        "reading": "くろまく",
+        "surface": "黒幕"
+      },
+      {
+        "reading": "まわり",
+        "surface": "周り"
+      },
+      {
+        "reading": "げんこう",
+        "surface": "現行"
+      },
+      {
+        "reading": "うけて",
+        "surface": "受け手"
+      },
+      {
+        "reading": "いきば",
+        "surface": "行き場"
+      },
+      {
+        "reading": "ゆうざい",
+        "surface": "有罪"
+      },
+      {
+        "reading": "したず",
+        "surface": "下図"
+      },
+      {
+        "reading": "ふともも",
+        "surface": "太もも"
+      },
+      {
+        "reading": "うたげ",
+        "surface": "宴"
+      },
+      {
+        "reading": "ざいあく",
+        "surface": "罪悪"
+      },
+      {
+        "reading": "しのぶ",
+        "surface": "忍"
+      },
+      {
+        "reading": "ばいすう",
+        "surface": "倍数"
+      },
+      {
+        "reading": "どいつご",
+        "surface": "ドイツ語"
+      },
+      {
+        "reading": "ちかしつ",
+        "surface": "地下室"
+      },
+      {
+        "reading": "めいしゅ",
+        "surface": "名手"
+      },
+      {
+        "reading": "ていそう",
+        "surface": "低層"
+      }
+    ],
+    "best": 8,
+    "best_path": [
+      14,
+      5,
+      4,
+      11,
+      3,
+      15,
+      8,
+      2
+    ]
+  },
+  "day-35": {
+    "words": [
+      {
+        "reading": "ふうけい",
+        "surface": "風景"
+      },
+      {
+        "reading": "ぐすく",
+        "surface": "城"
+      },
+      {
+        "reading": "いっぱつ",
+        "surface": "一発"
+      },
+      {
+        "reading": "しんやく",
+        "surface": "新薬"
+      },
+      {
+        "reading": "こころえ",
+        "surface": "心得"
+      },
+      {
+        "reading": "しちみ",
+        "surface": "七味"
+      },
+      {
+        "reading": "たいがい",
+        "surface": "体外"
+      },
+      {
+        "reading": "つくり",
+        "surface": "作り"
+      },
+      {
+        "reading": "どうふ",
+        "surface": "豆腐"
+      },
+      {
+        "reading": "たいら",
+        "surface": "平"
+      },
+      {
+        "reading": "しんぐ",
+        "surface": "寝具"
+      },
+      {
+        "reading": "まりょく",
+        "surface": "魔力"
+      },
+      {
+        "reading": "くすし",
+        "surface": "薬師"
+      },
+      {
+        "reading": "りそう",
+        "surface": "理想"
+      },
+      {
+        "reading": "くけい",
+        "surface": "矩形"
+      },
+      {
+        "reading": "だんち",
+        "surface": "団地"
+      }
+    ],
+    "best": 8,
+    "best_path": [
+      3,
+      12,
+      10,
+      1,
+      14,
+      2,
+      7,
+      13
+    ]
+  },
+  "day-36": {
+    "words": [
+      {
+        "reading": "やわら",
+        "surface": "柔"
+      },
+      {
+        "reading": "おなまえ",
+        "surface": "お名前"
+      },
+      {
+        "reading": "たんぼ",
+        "surface": "田んぼ"
+      },
+      {
+        "reading": "もよう",
+        "surface": "模様"
+      },
+      {
+        "reading": "うけみ",
+        "surface": "受け身"
+      },
+      {
+        "reading": "らてんご",
+        "surface": "ラテン語"
+      },
+      {
+        "reading": "ごくろう",
+        "surface": "ご苦労"
+      },
+      {
+        "reading": "ようつい",
+        "surface": "腰椎"
+      },
+      {
+        "reading": "みちばた",
+        "surface": "道端"
+      },
+      {
+        "reading": "たっぷり",
+        "surface": "たっぷり"
+      },
+      {
+        "reading": "ひがた",
+        "surface": "干潟"
+      },
+      {
+        "reading": "じりき",
+        "surface": "自力"
+      },
+      {
+        "reading": "がいけい",
+        "surface": "外形"
+      },
+      {
+        "reading": "らいう",
+        "surface": "雷雨"
+      },
+      {
+        "reading": "うけざら",
+        "surface": "受け皿"
+      },
+      {
+        "reading": "ちから",
+        "surface": "力"
+      }
+    ],
+    "best": 8,
+    "best_path": [
+      0,
+      5,
+      6,
+      14,
+      13,
+      4,
+      8,
+      2
+    ]
+  },
+  "day-37": {
+    "words": [
+      {
+        "reading": "ゆうのう",
+        "surface": "有能"
+      },
+      {
+        "reading": "いんきゃ",
+        "surface": "陰キャ"
+      },
+      {
+        "reading": "おおむぎ",
+        "surface": "大麦"
+      },
+      {
+        "reading": "そのみち",
+        "surface": "その道"
+      },
+      {
+        "reading": "ちひょう",
+        "surface": "地表"
+      },
+      {
+        "reading": "しょっき",
+        "surface": "食器"
+      },
+      {
+        "reading": "ようがし",
+        "surface": "洋菓子"
+      },
+      {
+        "reading": "うるおい",
+        "surface": "潤い"
+      },
+      {
+        "reading": "やぬし",
+        "surface": "家主"
+      },
+      {
+        "reading": "ごこち",
+        "surface": "心地"
+      },
+      {
+        "reading": "うちゆ",
+        "surface": "内湯"
+      },
+      {
+        "reading": "だいふく",
+        "surface": "大福"
+      },
+      {
+        "reading": "どうろ",
+        "surface": "道路"
+      },
+      {
+        "reading": "ぶんぼ",
+        "surface": "分母"
+      },
+      {
+        "reading": "ごんご",
+        "surface": "言語"
+      },
+      {
+        "reading": "きごこち",
+        "surface": "着心地"
+      }
+    ],
+    "best": 10,
+    "best_path": [
+      14,
+      9,
+      4,
+      10,
+      0,
+      7,
+      1,
+      8,
+      5,
+      15
+    ]
+  },
+  "day-38": {
+    "words": [
+      {
+        "reading": "きゅう",
+        "surface": "きゅう"
+      },
+      {
+        "reading": "だいち",
+        "surface": "大地"
+      },
+      {
+        "reading": "ぐざい",
+        "surface": "具材"
+      },
+      {
+        "reading": "いわい",
+        "surface": "祝"
+      },
+      {
+        "reading": "こうほう",
+        "surface": "後方"
+      },
+      {
+        "reading": "いぶき",
+        "surface": "息吹"
+      },
+      {
+        "reading": "みんじ",
+        "surface": "民事"
+      },
+      {
+        "reading": "こしき",
+        "surface": "古式"
+      },
+      {
+        "reading": "わがや",
+        "surface": "我が家"
+      },
+      {
+        "reading": "くみあい",
+        "surface": "組合"
+      },
+      {
+        "reading": "かりょく",
+        "surface": "火力"
+      },
+      {
+        "reading": "くりつ",
+        "surface": "区立"
+      },
+      {
+        "reading": "ようつう",
+        "surface": "腰痛"
+      },
+      {
+        "reading": "やっか",
+        "surface": "薬価"
+      },
+      {
+        "reading": "うすかわ",
+        "surface": "薄皮"
+      },
+      {
+        "reading": "かんして",
+        "surface": "関して"
+      }
+    ],
+    "best": 9,
+    "best_path": [
+      2,
+      3,
+      5,
+      0,
+      14,
+      8,
+      13,
+      10,
+      9
+    ]
+  },
+  "day-39": {
+    "words": [
+      {
+        "reading": "ふくつう",
+        "surface": "腹痛"
+      },
+      {
+        "reading": "うでわ",
+        "surface": "腕輪"
+      },
+      {
+        "reading": "ちひろ",
+        "surface": "千尋"
+      },
+      {
+        "reading": "ろうむ",
+        "surface": "労務"
+      },
+      {
+        "reading": "わるぐち",
+        "surface": "悪口"
+      },
+      {
+        "reading": "ゆうい",
+        "surface": "有意"
+      },
+      {
+        "reading": "ふとめ",
+        "surface": "太め"
+      },
+      {
+        "reading": "ぐんそう",
+        "surface": "軍曹"
+      },
+      {
+        "reading": "やわら",
+        "surface": "柔"
+      },
+      {
+        "reading": "いとなみ",
+        "surface": "営み"
+      },
+      {
+        "reading": "みはば",
+        "surface": "身幅"
+      },
+      {
+        "reading": "むすい",
+        "surface": "無水"
+      },
+      {
+        "reading": "りょうめ",
+        "surface": "両目"
+      },
+      {
+        "reading": "かんき",
+        "surface": "寒気"
+      },
+      {
+        "reading": "えんとう",
+        "surface": "円筒"
+      },
+      {
+        "reading": "おろし",
+        "surface": "卸"
+      }
+    ],
+    "best": 8,
+    "best_path": [
+      0,
+      1,
+      4,
+      2,
+      3,
+      11,
+      9,
+      10
+    ]
+  },
+  "day-40": {
+    "words": [
+      {
+        "reading": "ぶんけい",
+        "surface": "文系"
+      },
+      {
+        "reading": "いただき",
+        "surface": "いただき"
+      },
+      {
+        "reading": "といや",
+        "surface": "問屋"
+      },
+      {
+        "reading": "きゅうし",
+        "surface": "臼歯"
+      },
+      {
+        "reading": "いこい",
+        "surface": "憩い"
+      },
+      {
+        "reading": "きえい",
+        "surface": "気鋭"
+      },
+      {
+        "reading": "いきかた",
+        "surface": "生き方"
+      },
+      {
+        "reading": "いっとう",
+        "surface": "一等"
+      },
+      {
+        "reading": "ぐんぜい",
+        "surface": "軍勢"
+      },
+      {
+        "reading": "にいさま",
+        "surface": "兄様"
+      },
+      {
+        "reading": "さすが",
+        "surface": "流石"
+      },
+      {
+        "reading": "がんぐ",
+        "surface": "玩具"
+      },
+      {
+        "reading": "たいさ",
+        "surface": "大差"
+      },
+      {
+        "reading": "いんよう",
+        "surface": "陰陽"
+      },
+      {
+        "reading": "うわがわ",
+        "surface": "上側"
+      },
+      {
+        "reading": "しょとう",
+        "surface": "諸島"
+      }
+    ],
+    "best": 11,
+    "best_path": [
+      0,
+      1,
+      5,
+      4,
+      6,
+      12,
+      10,
+      11,
+      8,
+      7,
+      14
+    ]
+  },
+  "day-41": {
+    "words": [
+      {
+        "reading": "おてら",
+        "surface": "お寺"
+      },
+      {
+        "reading": "かいろう",
+        "surface": "回廊"
+      },
+      {
+        "reading": "ごうか",
+        "surface": "豪華"
+      },
+      {
+        "reading": "もやし",
+        "surface": "もやし"
+      },
+      {
+        "reading": "わんこ",
+        "surface": "わんこ"
+      },
+      {
+        "reading": "おくゆき",
+        "surface": "奥行き"
+      },
+      {
+        "reading": "しんくう",
+        "surface": "真空"
+      },
+      {
+        "reading": "のうき",
+        "surface": "納期"
+      },
+      {
+        "reading": "けがわ",
+        "surface": "毛皮"
+      },
+      {
+        "reading": "うたげ",
+        "surface": "宴"
+      },
+      {
+        "reading": "かくりつ",
+        "surface": "確率"
+      },
+      {
+        "reading": "しやく",
+        "surface": "試薬"
+      },
+      {
+        "reading": "るいご",
+        "surface": "類語"
+      },
+      {
+        "reading": "くにぐに",
+        "surface": "国々"
+      },
+      {
+        "reading": "あてな",
+        "surface": "宛名"
+      },
+      {
+        "reading": "にのまる",
+        "surface": "二の丸"
+      }
+    ],
+    "best": 8,
+    "best_path": [
+      3,
+      11,
+      13,
+      15,
+      12,
+      2,
+      1,
+      9
+    ]
+  },
+  "day-42": {
+    "words": [
+      {
+        "reading": "しんぱい",
+        "surface": "心肺"
+      },
+      {
+        "reading": "そうけ",
+        "surface": "宗家"
+      },
+      {
+        "reading": "なわばり",
+        "surface": "縄張り"
+      },
+      {
+        "reading": "じょゆう",
+        "surface": "女優"
+      },
+      {
+        "reading": "てもと",
+        "surface": "手元"
+      },
+      {
+        "reading": "しょか",
+        "surface": "初夏"
+      },
+      {
+        "reading": "ときめき",
+        "surface": "ときめき"
+      },
+      {
+        "reading": "とうじ",
+        "surface": "冬至"
+      },
+      {
+        "reading": "いんし",
+        "surface": "因子"
+      },
+      {
+        "reading": "ぶっせい",
+        "surface": "物性"
+      },
+      {
+        "reading": "かりゅう",
+        "surface": "下流"
+      },
+      {
+        "reading": "かいは",
+        "surface": "会派"
+      },
+      {
+        "reading": "すいどう",
+        "surface": "水道"
+      },
+      {
+        "reading": "うまどし",
+        "surface": "午年"
+      },
+      {
+        "reading": "たいじ",
+        "surface": "胎児"
+      },
+      {
+        "reading": "ごこち",
+        "surface": "心地"
+      }
+    ],
+    "best": 8,
+    "best_path": [
+      4,
+      7,
+      3,
+      13,
+      0,
+      8,
+      5,
+      10
+    ]
+  },
+  "day-43": {
+    "words": [
+      {
+        "reading": "きょくち",
+        "surface": "局地"
+      },
+      {
+        "reading": "かわきり",
+        "surface": "皮切り"
+      },
+      {
+        "reading": "ちいく",
+        "surface": "知育"
+      },
+      {
+        "reading": "こだて",
+        "surface": "戸建て"
+      },
+      {
+        "reading": "さなだ",
+        "surface": "真田"
+      },
+      {
+        "reading": "くやしさ",
+        "surface": "悔しさ"
+      },
+      {
+        "reading": "したぎ",
+        "surface": "下着"
+      },
+      {
+        "reading": "よそおい",
+        "surface": "装い"
+      },
+      {
+        "reading": "とうき",
+        "surface": "冬季"
+      },
+      {
+        "reading": "せんぷう",
+        "surface": "旋風"
+      },
+      {
+        "reading": "こうどう",
+        "surface": "公道"
+      },
+      {
+        "reading": "こうい",
+        "surface": "好意"
+      },
+      {
+        "reading": "だんがい",
+        "surface": "断崖"
+      },
+      {
+        "reading": "ゆあつ",
+        "surface": "油圧"
+      },
+      {
+        "reading": "いえけい",
+        "surface": "家系"
+      },
+      {
+        "reading": "いちや",
+        "surface": "一夜"
+      }
+    ],
+    "best": 8,
+    "best_path": [
+      8,
+      0,
+      2,
+      5,
+      4,
+      12,
+      14,
+      15
+    ]
+  },
+  "day-44": {
+    "words": [
+      {
+        "reading": "うらにわ",
+        "surface": "裏庭"
+      },
+      {
+        "reading": "じんぼう",
+        "surface": "人望"
+      },
+      {
+        "reading": "ぎほう",
+        "surface": "技法"
+      },
+      {
+        "reading": "しめい",
+        "surface": "氏名"
+      },
+      {
+        "reading": "どうぶつ",
+        "surface": "動物"
+      },
+      {
+        "reading": "うんせい",
+        "surface": "運勢"
+      },
+      {
+        "reading": "いそぎ",
+        "surface": "急ぎ"
+      },
+      {
+        "reading": "いっせい",
+        "surface": "一斉"
+      },
+      {
+        "reading": "たぐい",
+        "surface": "類"
+      },
+      {
+        "reading": "ひかえ",
+        "surface": "控え"
+      },
+      {
+        "reading": "つらさ",
+        "surface": "辛さ"
+      },
+      {
+        "reading": "おもい",
+        "surface": "思い"
+      },
+      {
+        "reading": "いぬねこ",
+        "surface": "犬猫"
+      },
+      {
+        "reading": "こうや",
+        "surface": "荒野"
+      },
+      {
+        "reading": "いぬたち",
+        "surface": "犬たち"
+      },
+      {
+        "reading": "ちてい",
+        "surface": "地底"
+      }
+    ],
+    "best": 9,
+    "best_path": [
+      3,
+      6,
+      2,
+      5,
+      7,
+      14,
+      15,
+      12,
+      13
+    ]
+  },
+  "day-45": {
+    "words": [
+      {
+        "reading": "やぐら",
+        "surface": "櫓"
+      },
+      {
+        "reading": "しゅうさ",
+        "surface": "収差"
+      },
+      {
+        "reading": "かおり",
+        "surface": "香り"
+      },
+      {
+        "reading": "みんか",
+        "surface": "民家"
+      },
+      {
+        "reading": "りんじ",
+        "surface": "臨時"
+      },
+      {
+        "reading": "しょさ",
+        "surface": "所作"
+      },
+      {
+        "reading": "やさしさ",
+        "surface": "優しさ"
+      },
+      {
+        "reading": "じいしき",
+        "surface": "自意識"
+      },
+      {
+        "reading": "ふうかく",
+        "surface": "風格"
+      },
+      {
+        "reading": "しゅうき",
+        "surface": "周期"
+      },
+      {
+        "reading": "えいよう",
+        "surface": "栄養"
+      },
+      {
+        "reading": "くろずみ",
+        "surface": "黒ずみ"
+      },
+      {
+        "reading": "びにゅう",
+        "surface": "美乳"
+      },
+      {
+        "reading": "ほんせき",
+        "surface": "本籍"
+      },
+      {
+        "reading": "きょうい",
+        "surface": "脅威"
+      },
+      {
+        "reading": "さんく",
+        "surface": "産駒"
+      }
+    ],
+    "best": 8,
+    "best_path": [
+      1,
+      15,
+      11,
+      3,
+      2,
+      4,
+      7,
+      14
+    ]
+  },
+  "day-46": {
+    "words": [
+      {
+        "reading": "しゅるい",
+        "surface": "種類"
+      },
+      {
+        "reading": "おこめ",
+        "surface": "お米"
+      },
+      {
+        "reading": "かくしゃ",
+        "surface": "各社"
+      },
+      {
+        "reading": "ひじり",
+        "surface": "聖"
+      },
+      {
+        "reading": "ゆうやく",
+        "surface": "釉薬"
+      },
+      {
+        "reading": "くされ",
+        "surface": "腐れ"
+      },
+      {
+        "reading": "めがみ",
+        "surface": "女神"
+      },
+      {
+        "reading": "ろうか",
+        "surface": "廊下"
+      },
+      {
+        "reading": "みんしゅ",
+        "surface": "民主"
+      },
+      {
+        "reading": "とめおき",
+        "surface": "留置"
+      },
+      {
+        "reading": "やしき",
+        "surface": "屋敷"
+      },
+      {
+        "reading": "はなさき",
+        "surface": "鼻先"
+      },
+      {
+        "reading": "つむり",
+        "surface": "頭"
+      },
+      {
+        "reading": "しおけ",
+        "surface": "塩気"
+      },
+      {
+        "reading": "れいき",
+        "surface": "冷気"
+      },
+      {
+        "reading": "きざし",
+        "surface": "兆し"
+      }
+    ],
+    "best": 8,
+    "best_path": [
+      1,
+      6,
+      8,
+      4,
+      5,
+      14,
+      15,
+      0
+    ]
+  },
+  "day-47": {
+    "words": [
+      {
+        "reading": "えよう",
+        "surface": "得よう"
+      },
+      {
+        "reading": "かりょく",
+        "surface": "火力"
+      },
+      {
+        "reading": "かんして",
+        "surface": "関して"
+      },
+      {
+        "reading": "うたいて",
+        "surface": "歌い手"
+      },
+      {
+        "reading": "どうるい",
+        "surface": "同類"
+      },
+      {
+        "reading": "おうさま",
+        "surface": "王様"
+      },
+      {
+        "reading": "ねんし",
+        "surface": "年始"
+      },
+      {
+        "reading": "のりもの",
+        "surface": "乗り物"
+      },
+      {
+        "reading": "りこう",
+        "surface": "理工"
+      },
+      {
+        "reading": "りとく",
+        "surface": "利得"
+      },
+      {
+        "reading": "せいほう",
+        "surface": "製法"
+      },
+      {
+        "reading": "ほうりつ",
+        "surface": "法律"
+      },
+      {
+        "reading": "てんめい",
+        "surface": "店名"
+      },
+      {
+        "reading": "いかり",
+        "surface": "怒り"
+      },
+      {
+        "reading": "うでまえ",
+        "surface": "腕前"
+      },
+      {
+        "reading": "てんとう",
+        "surface": "店頭"
+      }
+    ],
+    "best": 8,
+    "best_path": [
+      2,
+      12,
+      13,
+      8,
+      3,
+      15,
+      14,
+      0
+    ]
+  },
+  "day-48": {
+    "words": [
+      {
+        "reading": "ふどう",
+        "surface": "不動"
+      },
+      {
+        "reading": "しどう",
+        "surface": "市道"
+      },
+      {
+        "reading": "ぎこう",
+        "surface": "技巧"
+      },
+      {
+        "reading": "ひきょり",
+        "surface": "飛距離"
+      },
+      {
+        "reading": "はちのす",
+        "surface": "蜂の巣"
+      },
+      {
+        "reading": "うわぎ",
+        "surface": "上着"
+      },
+      {
+        "reading": "ぎほう",
+        "surface": "技法"
+      },
+      {
+        "reading": "てすう",
+        "surface": "手数"
+      },
+      {
+        "reading": "てんか",
+        "surface": "天下"
+      },
+      {
+        "reading": "うさぎ",
+        "surface": "うさぎ"
+      },
+      {
+        "reading": "しこう",
+        "surface": "至高"
+      },
+      {
+        "reading": "きごう",
+        "surface": "記号"
+      },
+      {
+        "reading": "こんせき",
+        "surface": "痕跡"
+      },
+      {
+        "reading": "おにあい",
+        "surface": "お似合い"
+      },
+      {
+        "reading": "すのこ",
+        "surface": "すのこ"
+      },
+      {
+        "reading": "そうほう",
+        "surface": "双方"
+      }
+    ],
+    "best": 8,
+    "best_path": [
+      4,
+      14,
+      12,
+      11,
+      5,
+      2,
+      9,
+      6
+    ]
+  },
+  "day-49": {
+    "words": [
+      {
+        "reading": "わだいこ",
+        "surface": "和太鼓"
+      },
+      {
+        "reading": "よぞら",
+        "surface": "夜空"
+      },
+      {
+        "reading": "でんき",
+        "surface": "電気"
+      },
+      {
+        "reading": "ひけつ",
+        "surface": "秘訣"
+      },
+      {
+        "reading": "はこにわ",
+        "surface": "箱庭"
+      },
+      {
+        "reading": "じちたい",
+        "surface": "自治体"
+      },
+      {
+        "reading": "じょうよ",
+        "surface": "剰余"
+      },
+      {
+        "reading": "ようご",
+        "surface": "用語"
+      },
+      {
+        "reading": "ろうそ",
+        "surface": "労組"
+      },
+      {
+        "reading": "そとがわ",
+        "surface": "外側"
+      },
+      {
+        "reading": "しゅさい",
+        "surface": "主菜"
+      },
+      {
+        "reading": "こもじ",
+        "surface": "小文字"
+      },
+      {
+        "reading": "たてよこ",
+        "surface": "縦横"
+      },
+      {
+        "reading": "おんてい",
+        "surface": "音程"
+      },
+      {
+        "reading": "わいろ",
+        "surface": "賄賂"
+      },
+      {
+        "reading": "おゆるし",
+        "surface": "お許し"
+      }
+    ],
+    "best": 8,
+    "best_path": [
+      4,
+      14,
+      8,
+      9,
+      0,
+      11,
+      6,
+      1
+    ]
+  },
+  "day-50": {
+    "words": [
+      {
+        "reading": "いんぼう",
+        "surface": "陰謀"
+      },
+      {
+        "reading": "げんこう",
+        "surface": "現行"
+      },
+      {
+        "reading": "いるい",
+        "surface": "衣類"
+      },
+      {
+        "reading": "にくぼう",
+        "surface": "肉棒"
+      },
+      {
+        "reading": "いろめ",
+        "surface": "色目"
+      },
+      {
+        "reading": "かちゅう",
+        "surface": "渦中"
+      },
+      {
+        "reading": "うみがわ",
+        "surface": "海側"
+      },
+      {
+        "reading": "こんじき",
+        "surface": "金色"
+      },
+      {
+        "reading": "よこなが",
+        "surface": "横長"
+      },
+      {
+        "reading": "ばすてい",
+        "surface": "バス停"
+      },
+      {
+        "reading": "めいすい",
+        "surface": "名水"
+      },
+      {
+        "reading": "ふんいき",
+        "surface": "雰囲気"
+      },
+      {
+        "reading": "やさい",
+        "surface": "野菜"
+      },
+      {
+        "reading": "いきば",
+        "surface": "行き場"
+      },
+      {
+        "reading": "ひがい",
+        "surface": "被害"
+      },
+      {
+        "reading": "うぶげ",
+        "surface": "産毛"
+      }
+    ],
+    "best": 10,
+    "best_path": [
+      12,
+      2,
+      4,
+      10,
+      13,
+      9,
+      0,
+      15,
+      1,
+      6
+    ]
+  },
+  "day-51": {
+    "words": [
+      {
+        "reading": "りきさく",
+        "surface": "力作"
+      },
+      {
+        "reading": "りょうけ",
+        "surface": "両家"
+      },
+      {
+        "reading": "ごうか",
+        "surface": "豪華"
+      },
+      {
+        "reading": "もんだい",
+        "surface": "問題"
+      },
+      {
+        "reading": "いよく",
+        "surface": "意欲"
+      },
+      {
+        "reading": "しゆう",
+        "surface": "雌雄"
+      },
+      {
+        "reading": "じょうぶ",
+        "surface": "上部"
+      },
+      {
+        "reading": "いまふう",
+        "surface": "今風"
+      },
+      {
+        "reading": "こっかく",
+        "surface": "骨格"
+      },
+      {
+        "reading": "しゅじゅ",
+        "surface": "種々"
+      },
+      {
+        "reading": "けっかく",
+        "surface": "結核"
+      },
+      {
+        "reading": "くすり",
+        "surface": "薬"
+      },
+      {
+        "reading": "うきぼり",
+        "surface": "浮き彫り"
+      },
+      {
+        "reading": "おてかず",
+        "surface": "お手数"
+      },
+      {
+        "reading": "くちびる",
+        "surface": "唇"
+      },
+      {
+        "reading": "いたみ",
+        "surface": "痛み"
+      }
+    ],
+    "best": 8,
+    "best_path": [
+      3,
+      7,
+      12,
+      0,
+      11,
+      1,
+      10,
+      14
+    ]
+  },
+  "day-52": {
+    "words": [
+      {
+        "reading": "らんおう",
+        "surface": "卵黄"
+      },
+      {
+        "reading": "かまど",
+        "surface": "かまど"
+      },
+      {
+        "reading": "てっぺき",
+        "surface": "鉄壁"
+      },
+      {
+        "reading": "なかわた",
+        "surface": "中綿"
+      },
+      {
+        "reading": "しぎかい",
+        "surface": "市議会"
+      },
+      {
+        "reading": "はんせい",
+        "surface": "半生"
+      },
+      {
+        "reading": "とほう",
+        "surface": "途方"
+      },
+      {
+        "reading": "うたごえ",
+        "surface": "歌声"
+      },
+      {
+        "reading": "いはい",
+        "surface": "位牌"
+      },
+      {
+        "reading": "はないろ",
+        "surface": "花色"
+      },
+      {
+        "reading": "いもうと",
+        "surface": "妹"
+      },
+      {
+        "reading": "えいせい",
+        "surface": "衛生"
+      },
+      {
+        "reading": "かしら",
+        "surface": "頭"
+      },
+      {
+        "reading": "ろうか",
+        "surface": "廊下"
+      },
+      {
+        "reading": "ねもと",
+        "surface": "根本"
+      },
+      {
+        "reading": "じゃり",
+        "surface": "砂利"
+      }
+    ],
+    "best": 9,
+    "best_path": [
+      9,
+      13,
+      12,
+      0,
+      7,
+      11,
+      8,
+      10,
+      6
+    ]
+  },
+  "day-53": {
+    "words": [
+      {
+        "reading": "あおのり",
+        "surface": "青のり"
+      },
+      {
+        "reading": "うのみ",
+        "surface": "鵜呑み"
+      },
+      {
+        "reading": "らいせ",
+        "surface": "来世"
+      },
+      {
+        "reading": "きじょ",
+        "surface": "機序"
+      },
+      {
+        "reading": "えきしゃ",
+        "surface": "駅舎"
+      },
+      {
+        "reading": "いばら",
+        "surface": "茨"
+      },
+      {
+        "reading": "いんよう",
+        "surface": "陰陽"
+      },
+      {
+        "reading": "やまい",
+        "surface": "病"
+      },
+      {
+        "reading": "しょせつ",
+        "surface": "諸説"
+      },
+      {
+        "reading": "おこめ",
+        "surface": "お米"
+      },
+      {
+        "reading": "うんだい",
+        "surface": "雲台"
+      },
+      {
+        "reading": "ばいち",
+        "surface": "培地"
+      },
+      {
+        "reading": "したぎ",
+        "surface": "下着"
+      },
+      {
+        "reading": "りょてい",
+        "surface": "旅程"
+      },
+      {
+        "reading": "ともえ",
+        "surface": "巴"
+      },
+      {
+        "reading": "うねり",
+        "surface": "うねり"
+      }
+    ],
+    "best": 8,
+    "best_path": [
+      14,
+      4,
+      7,
+      6,
+      15,
+      13,
+      5,
+      2
+    ]
+  },
+  "day-54": {
+    "words": [
+      {
+        "reading": "そうさい",
+        "surface": "総裁"
+      },
+      {
+        "reading": "ぼにゅう",
+        "surface": "母乳"
+      },
+      {
+        "reading": "しゅじ",
+        "surface": "主事"
+      },
+      {
+        "reading": "せんゆう",
+        "surface": "戦友"
+      },
+      {
+        "reading": "えいたい",
+        "surface": "永代"
+      },
+      {
+        "reading": "やなぎ",
+        "surface": "柳"
+      },
+      {
+        "reading": "なつば",
+        "surface": "夏場"
+      },
+      {
+        "reading": "くうぼ",
+        "surface": "空母"
+      },
+      {
+        "reading": "ねっとう",
+        "surface": "熱湯"
+      },
+      {
+        "reading": "いもうと",
+        "surface": "妹"
+      },
+      {
+        "reading": "うたごえ",
+        "surface": "歌声"
+      },
+      {
+        "reading": "せきずい",
+        "surface": "脊髄"
+      },
+      {
+        "reading": "とうほく",
+        "surface": "東北"
+      },
+      {
+        "reading": "ひめい",
+        "surface": "悲鳴"
+      },
+      {
+        "reading": "いんずう",
+        "surface": "員数"
+      },
+      {
+        "reading": "へいけ",
+        "surface": "平家"
+      }
+    ],
+    "best": 8,
+    "best_path": [
+      0,
+      9,
+      12,
+      7,
+      1,
+      10,
+      4,
+      14
+    ]
+  },
+  "day-55": {
+    "words": [
+      {
+        "reading": "しがく",
+        "surface": "私学"
+      },
+      {
+        "reading": "だいごみ",
+        "surface": "醍醐味"
+      },
+      {
+        "reading": "うずら",
+        "surface": "うずら"
+      },
+      {
+        "reading": "じょおう",
+        "surface": "女王"
+      },
+      {
+        "reading": "うもう",
+        "surface": "羽毛"
+      },
+      {
+        "reading": "れいき",
+        "surface": "冷気"
+      },
+      {
+        "reading": "いっぷう",
+        "surface": "一風"
+      },
+      {
+        "reading": "うすあじ",
+        "surface": "薄味"
+      },
+      {
+        "reading": "れいだい",
+        "surface": "例題"
+      },
+      {
+        "reading": "ゆびいれ",
+        "surface": "指入れ"
+      },
+      {
+        "reading": "がいむ",
+        "surface": "外務"
+      },
+      {
+        "reading": "らいう",
+        "surface": "雷雨"
+      },
+      {
+        "reading": "みどり",
+        "surface": "緑"
+      },
+      {
+        "reading": "ゆきやま",
+        "surface": "雪山"
+      },
+      {
+        "reading": "ひとめ",
+        "surface": "人目"
+      },
+      {
+        "reading": "ぶっし",
+        "surface": "物資"
+      }
+    ],
+    "best": 8,
+    "best_path": [
+      9,
+      8,
+      6,
+      2,
+      11,
+      4,
+      7,
+      3
+    ]
+  },
+  "day-56": {
+    "words": [
+      {
+        "reading": "しゃせつ",
+        "surface": "社説"
+      },
+      {
+        "reading": "きえい",
+        "surface": "気鋭"
+      },
+      {
+        "reading": "かんろく",
+        "surface": "貫禄"
+      },
+      {
+        "reading": "きょせき",
+        "surface": "巨石"
+      },
+      {
+        "reading": "きんかい",
+        "surface": "近海"
+      },
+      {
+        "reading": "ゆうぐ",
+        "surface": "遊具"
+      },
+      {
+        "reading": "ぐんし",
+        "surface": "軍師"
+      },
+      {
+        "reading": "おっぱい",
+        "surface": "おっぱい"
+      },
+      {
+        "reading": "からっぽ",
+        "surface": "空っぽ"
+      },
+      {
+        "reading": "めいど",
+        "surface": "明度"
+      },
+      {
+        "reading": "きょうゆ",
+        "surface": "教諭"
+      },
+      {
+        "reading": "いしぶみ",
+        "surface": "碑"
+      },
+      {
+        "reading": "とちじ",
+        "surface": "都知事"
+      },
+      {
+        "reading": "ごうり",
+        "surface": "合理"
+      },
+      {
+        "reading": "つみき",
+        "surface": "積み木"
+      },
+      {
+        "reading": "しにせ",
+        "surface": "老舗"
+      }
+    ],
+    "best": 8,
+    "best_path": [
+      3,
+      10,
+      5,
+      6,
+      0,
+      14,
+      1,
+      11
+    ]
+  },
+  "day-57": {
+    "words": [
+      {
+        "reading": "いわば",
+        "surface": "岩場"
+      },
+      {
+        "reading": "たいがい",
+        "surface": "体外"
+      },
+      {
+        "reading": "つまり",
+        "surface": "つまり"
+      },
+      {
+        "reading": "ぎせき",
+        "surface": "議席"
+      },
+      {
+        "reading": "もうふ",
+        "surface": "毛布"
+      },
+      {
+        "reading": "とりくみ",
+        "surface": "取り組み"
+      },
+      {
+        "reading": "こざら",
+        "surface": "小皿"
+      },
+      {
+        "reading": "きがい",
+        "surface": "危害"
+      },
+      {
+        "reading": "めいげつ",
+        "surface": "名月"
+      },
+      {
+        "reading": "せっこつ",
+        "surface": "接骨"
+      },
+      {
+        "reading": "ふしめ",
+        "surface": "節目"
+      },
+      {
+        "reading": "はもの",
+        "surface": "刃物"
+      },
+      {
+        "reading": "たいねつ",
+        "surface": "耐熱"
+      },
+      {
+        "reading": "ことがら",
+        "surface": "事柄"
+      },
+      {
+        "reading": "りゅうぎ",
+        "surface": "流儀"
+      },
+      {
+        "reading": "くつひも",
+        "surface": "靴紐"
+      }
+    ],
+    "best": 9,
+    "best_path": [
+      15,
+      4,
+      10,
+      8,
+      2,
+      14,
+      3,
+      7,
+      0
+    ]
+  },
+  "day-58": {
+    "words": [
+      {
+        "reading": "はいぶつ",
+        "surface": "廃物"
+      },
+      {
+        "reading": "みぎあし",
+        "surface": "右足"
+      },
+      {
+        "reading": "かなあみ",
+        "surface": "金網"
+      },
+      {
+        "reading": "えんにち",
+        "surface": "縁日"
+      },
+      {
+        "reading": "めもと",
+        "surface": "目元"
+      },
+      {
+        "reading": "どうぎ",
+        "surface": "同義"
+      },
+      {
+        "reading": "ししゅう",
+        "surface": "歯周"
+      },
+      {
+        "reading": "えもの",
+        "surface": "獲物"
+      },
+      {
+        "reading": "どんぐり",
+        "surface": "どんぐり"
+      },
+      {
+        "reading": "たにく",
+        "surface": "多肉"
+      },
+      {
+        "reading": "うきよえ",
+        "surface": "浮世絵"
+      },
+      {
+        "reading": "げんじ",
+        "surface": "源氏"
+      },
+      {
+        "reading": "うすがた",
+        "surface": "薄型"
+      },
+      {
+        "reading": "でんどう",
+        "surface": "電動"
+      },
+      {
+        "reading": "よこむき",
+        "surface": "横向き"
+      },
+      {
+        "reading": "ちきゅう",
+        "surface": "地球"
+      }
+    ],
+    "best": 8,
+    "best_path": [
+      2,
+      1,
       6,
       10,
-      15
+      3,
+      15,
+      12,
+      9
+    ]
+  },
+  "day-59": {
+    "words": [
+      {
+        "reading": "いきょく",
+        "surface": "医局"
+      },
+      {
+        "reading": "くうはく",
+        "surface": "空白"
+      },
+      {
+        "reading": "いふく",
+        "surface": "衣服"
+      },
+      {
+        "reading": "がいく",
+        "surface": "街区"
+      },
+      {
+        "reading": "うすで",
+        "surface": "薄手"
+      },
+      {
+        "reading": "あきふゆ",
+        "surface": "秋冬"
+      },
+      {
+        "reading": "よびな",
+        "surface": "呼び名"
+      },
+      {
+        "reading": "やまおく",
+        "surface": "山奥"
+      },
+      {
+        "reading": "くちばし",
+        "surface": "くちばし"
+      },
+      {
+        "reading": "しゅくば",
+        "surface": "宿場"
+      },
+      {
+        "reading": "だいなし",
+        "surface": "台無し"
+      },
+      {
+        "reading": "じじょう",
+        "surface": "事情"
+      },
+      {
+        "reading": "でんい",
+        "surface": "電位"
+      },
+      {
+        "reading": "くつひも",
+        "surface": "靴紐"
+      },
+      {
+        "reading": "くれない",
+        "surface": "紅"
+      },
+      {
+        "reading": "べいどる",
+        "surface": "米ドル"
+      }
+    ],
+    "best": 9,
+    "best_path": [
+      11,
+      4,
+      12,
+      0,
+      1,
+      14,
+      2,
+      8,
+      9
     ]
   }
 }

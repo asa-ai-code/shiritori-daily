@@ -170,8 +170,12 @@ def make_puzzle(pool, seed, size=WORDS_PER_PUZZLE, target_chain=8, tries=30):
     rng = random.Random(seed)
     kata = re.compile(r"^[ァ-ヴー]+$")
     has_ascii = re.compile(r"[A-Za-z0-9]")
+    # 読みが長い(5〜6文字)語ほどビジネス/IT系の抽象語に偏る傾向があったので、
+    # 3〜4文字の語だけに絞ることで日常語の割合を上げる。
+    # その分母数が減るので、元プールはもっと広め(上位8000語)から取る。
     candidates = [w for w in pool
-                  if not kata.match(w["surface"]) and not has_ascii.search(w["surface"])][:4000]
+                  if not kata.match(w["surface"]) and not has_ascii.search(w["surface"])
+                  and len(w["reading"]) in (3, 4)][:8000]
 
     by_head = {}
     for w in candidates:
