@@ -439,8 +439,14 @@ function showResult(){
   else cmp = `最長解は ${best}語 でした`;
   document.getElementById("compareLine").textContent = cmp;
 
-  const answerChain = PUZZLE.best_path.map(i => PUZZLE.words[i].surface).join(" → ");
-  document.getElementById("answerBox").innerHTML = "最長解の一例: " + answerChain;
+  const answerBox = document.getElementById("answerBox");
+  const canReveal = locked || dayBest >= best; // 3回使い切った/満点を取った後だけ答えを見せる
+  if (canReveal) {
+    const answerChain = PUZZLE.best_path.map(i => PUZZLE.words[i].surface).join(" → ");
+    answerBox.innerHTML = "最長解の一例: " + answerChain;
+  } else {
+    answerBox.innerHTML = "※答えは3回挑戦を使い切るか、満点を取ると表示されます";
+  }
 
   const giveupBtn = document.getElementById("giveupBtn");
   if (locked) {
