@@ -151,15 +151,6 @@
     cursor: not-allowed;
   }
   .tile.disabled:hover { border-color: var(--border); }
-  .tile.shake {
-    animation: shake 0.3s ease;
-    border-color: #dc2626;
-  }
-  @keyframes shake {
-    0%, 100% { transform: translateX(0); }
-    25% { transform: translateX(-4px); }
-    75% { transform: translateX(4px); }
-  }
   .controls {
     display: flex;
     gap: 8px;
@@ -327,8 +318,6 @@ function tailKana(reading){
 
 const MAX_ATTEMPTS = 3;
 
-const MAX_UNDO_PER_ATTEMPT = 1; // 1回の挑戦につき「戻す」は1回まで(無制限だと総当たりできてズルになる)
-
 let chain = [];      // インデックスの配列(今の挑戦分)
 let bestSoFar = 0;   // 今の挑戦での最高到達
 let finished = false;      // 今の挑戦を終えたか
@@ -336,7 +325,6 @@ let locked = false;        // 3回使い切って、これ以上操作させな�
 let attemptsUsed = 0;      // 今日すでに使った挑戦回数
 let dayBest = 0;           // 今日の全挑戦を通じての最高記録
 let dayBestChain = [];     // その最高記録の内訳
-let undosUsed = 0;         // 今の挑戦で使った「戻す」の回数
 
 function storageKey() {
   return `shiritori_progress_${PUZZLE_NO}`;
@@ -364,26 +352,14 @@ function render(){
     const div = document.createElement("div");
     const usedIdx = chain.indexOf(idx);
     const isUsed = usedIdx !== -1;
-    const gameActive = !isUsed && !finished && !locked;
-    // どれが繋がるかを事前にグレーアウトで教えてしまうと答えのヒントになるので、
-    // 見た目上は「未使用の単語」を全部同じ扱いにする。繋がるかどうかはクリック後に判定する。
-    div.className = "tile" + (isUsed ? " used" : "") + (!gameActive ? " disabled" : "");
+    let canPick = !isUsed && !finished && !locked;
+    if (canPick && chain.length > 0) {
+      const lastTail = tailKana(PUZZLE.words[chain[chain.length-1]].reading);
+      canPick = headKana(w.reading) === lastTail;
+    }
+    div.className = "tile" + (isUsed ? " used" : "") + (!canPick && !isUsed ? " disabled" : "");
     div.textContent = w.surface;
-    div.onclick = () => {
-      if (!gameActive) return;
-      let connects = true;
-      if (chain.length > 0) {
-        const lastTail = tailKana(PUZZLE.words[chain[chain.length-1]].reading);
-        connects = headKana(w.reading) === lastTail;
-      }
-      if (connects) {
-        chain.push(idx);
-        render();
-      } else {
-        div.classList.add("shake");
-        setTimeout(() => div.classList.remove("shake"), 300);
-      }
-    };
+    div.onclick = () => { if (canPick) { chain.push(idx); render(); } };
     grid.appendChild(div);
   });
 
@@ -402,19 +378,10 @@ function render(){
     document.getElementById("bestSoFar").textContent = bestSoFar;
   }
   document.getElementById("attemptsLeft").textContent = Math.max(0, MAX_ATTEMPTS - attemptsUsed);
-
-  const undoBtn = document.getElementById("undoBtn");
-  const undosLeft = MAX_UNDO_PER_ATTEMPT - undosUsed;
-  if (!finished && !locked) {
-    undoBtn.textContent = undosLeft > 0 ? `1つ戻す(残り${undosLeft}回)` : "戻す回数を使い切りました";
-    undoBtn.disabled = undosLeft <= 0 || chain.length === 0;
-  }
 }
 
 document.getElementById("undoBtn").onclick = () => {
   if (finished || locked) return;
-  if (undosUsed >= MAX_UNDO_PER_ATTEMPT) return;
-  undosUsed += 1;
   chain.pop();
   render();
 };
@@ -437,7 +404,6 @@ document.getElementById("giveupBtn").onclick = () => {
     chain = [];
     bestSoFar = 0;
     finished = false;
-    undosUsed = 0; // 挑戦ごとに戻す回数もリセット
     document.getElementById("resultBox").classList.remove("show");
     document.getElementById("giveupBtn").textContent = "ここで終了して結果を見る";
     render();
@@ -460,14 +426,8 @@ function showResult(){
   else cmp = `最長解は ${best}語 でした`;
   document.getElementById("compareLine").textContent = cmp;
 
-  const answerBox = document.getElementById("answerBox");
-  const canReveal = locked || dayBest >= best; // 3回使い切った/満点を取った後だけ答えを見せる
-  if (canReveal) {
-    const answerChain = PUZZLE.best_path.map(i => PUZZLE.words[i].surface).join(" → ");
-    answerBox.innerHTML = "最長解の一例: " + answerChain;
-  } else {
-    answerBox.innerHTML = "※答えは3回挑戦を使い切るか、満点を取ると表示されます";
-  }
+  const answerChain = PUZZLE.best_path.map(i => PUZZLE.words[i].surface).join(" → ");
+  document.getElementById("answerBox").innerHTML = "最長解の一例: " + answerChain;
 
   const giveupBtn = document.getElementById("giveupBtn");
   if (locked) {
